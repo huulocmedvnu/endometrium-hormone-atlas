@@ -1,0 +1,396 @@
+{
+ "set": "cells",
+ "treated_group": "combined_pill",
+ "axis": {
+  "stroma_up": {
+   "genes": 200,
+   "median_fraction": 0.542,
+   "share_below_025": 0.345,
+   "share_above_075": 0.31
+  },
+  "stroma_down": {
+   "genes": 200,
+   "median_fraction": 0.629,
+   "share_below_025": 0.145,
+   "share_above_075": 0.355
+  },
+  "epithelium_up": {
+   "genes": 200,
+   "median_fraction": 0.207,
+   "share_below_025": 0.55,
+   "share_above_075": 0.135
+  },
+  "epithelium_down": {
+   "genes": 200,
+   "median_fraction": 0.526,
+   "share_below_025": 0.145,
+   "share_above_075": 0.23
+  },
+  "p_up_epithelium_lags_stroma": 5.46e-05
+ },
+ "receptors": {
+  "stroma": {
+   "ESR1": {
+    "proliferative": 1.03,
+    "secretory_mid": 0.492,
+    "treated": 0.793,
+    "p_vs_proliferative": 0.028,
+    "p_vs_mid": 0.0028
+   },
+   "ESR2": {
+    "proliferative": 0.004,
+    "secretory_mid": 0.003,
+    "treated": 0.002,
+    "p_vs_proliferative": 0.0935,
+    "p_vs_mid": 0.14
+   },
+   "PGR": {
+    "proliferative": 1.749,
+    "secretory_mid": 0.888,
+    "treated": 1.189,
+    "p_vs_proliferative": 0.00572,
+    "p_vs_mid": 0.0256
+   },
+   "AR": {
+    "proliferative": 0.721,
+    "secretory_mid": 0.317,
+    "treated": 0.689,
+    "p_vs_proliferative": 0.199,
+    "p_vs_mid": 0.0004
+   },
+   "NR3C1": {
+    "proliferative": 0.237,
+    "secretory_mid": 0.175,
+    "treated": 0.159,
+    "p_vs_proliferative": 0.0123,
+    "p_vs_mid": 0.955
+   },
+   "PGRMC1": {
+    "proliferative": 2.201,
+    "secretory_mid": 0.89,
+    "treated": 1.876,
+    "p_vs_proliferative": 0.327,
+    "p_vs_mid": 0.012
+   },
+   "OXTR": {
+    "proliferative": 0.007,
+    "secretory_mid": 0.003,
+    "treated": 0.002,
+    "p_vs_proliferative": 0.132,
+    "p_vs_mid": 0.595
+   }
+  },
+  "epithelium": {
+   "ESR1": {
+    "proliferative": 1.206,
+    "secretory_mid": 0.354,
+    "treated": 1.109,
+    "p_vs_proliferative": 0.108,
+    "p_vs_mid": 0.0727
+   },
+   "ESR2": {
+    "proliferative": 0.006,
+    "secretory_mid": 0.031,
+    "treated": 0.015,
+    "p_vs_proliferative": 0.0408,
+    "p_vs_mid": 0.181
+   },
+   "PGR": {
+    "proliferative": 1.699,
+    "secretory_mid": 0.112,
+    "treated": 0.903,
+    "p_vs_proliferative": 0.00122,
+    "p_vs_mid": 0.042
+   },
+   "AR": {
+    "proliferative": 0.137,
+    "secretory_mid": 0.036,
+    "treated": 0.202,
+    "p_vs_proliferative": 0.0823,
+    "p_vs_mid": 0.00025
+   },
+   "NR3C1": {
+    "proliferative": 0.033,
+    "secretory_mid": 0.024,
+    "treated": 0.073,
+    "p_vs_proliferative": 0.0366,
+    "p_vs_mid": 0.011
+   },
+   "PGRMC1": {
+    "proliferative": 1.152,
+    "secretory_mid": 0.66,
+    "treated": 1.044,
+    "p_vs_proliferative": 0.0679,
+    "p_vs_mid": 0.00749
+   },
+   "OXTR": {
+    "proliferative": 0.015,
+    "secretory_mid": 0.003,
+    "treated": 0.016,
+    "p_vs_proliferative": 0.947,
+    "p_vs_mid": 0.000999
+   }
+  }
+ },
+ "n_stroma": {
+  "proliferative": 22,
+  "other": 15,
+  "treated": 9,
+  "secretory_mid": 6,
+  "secretory_early": 6
+ },
+ "n_epithelium": {
+  "proliferative": 20,
+  "other": 14,
+  "treated": 10,
+  "secretory_mid": 6,
+  "secretory_early": 6
+ },
+ "epithelium_up_stay_proliferative": [
+  "CXCL14",
+  "MT1G",
+  "TM4SF1",
+  "RIMKLB",
+  "MT1E",
+  "MT2A",
+  "SOD2",
+  "CD55",
+  "CLDN4",
+  "MT1M",
+  "CRYAB",
+  "IL6ST",
+  "ANXA2",
+  "GADD45A",
+  "MT1F",
+  "MT1H",
+  "C2CD4B",
+  "C2CD4A",
+  "NEAT1",
+  "MT1X",
+  "KLF6",
+  "TCIM",
+  "IER3",
+  "DYNLT3",
+  "SGK1",
+  "RASD1",
+  "CEBPD",
+  "VCAN",
+  "KLF5",
+  "ETS2"
+ ],
+ "epithelium_up_follow": [
+  "GPX3",
+  "SLPI",
+  "LINC01320",
+  "KRT7",
+  "IGFBP7",
+  "SYNE2",
+  "CP",
+  "SCGB2A1",
+  "LGALS3",
+  "S100A13",
+  "TXNIP",
+  "GABRP",
+  "AHNAK",
+  "SLC34A2",
+  "SLC7A2",
+  "NNMT",
+  "MPZL2",
+  "IL1R1",
+  "ITGB8",
+  "RXFP1",
+  "CD9",
+  "PRKX",
+  "ITM2B",
+  "MT-ND4",
+  "ZBTB20",
+  "SEC62",
+  "LEPROT"
+ ],
+ "composition_epithelium": {
+  "Ciliated": {
+   "proliferative": 0.03,
+   "secretory_mid": 0.007,
+   "treated": 0.05,
+   "p_vs_proliferative": 0.441,
+   "p_vs_mid": 0.0312
+  },
+  "Cycling": {
+   "proliferative": 0.065,
+   "secretory_mid": 0.0,
+   "treated": 0.003,
+   "p_vs_proliferative": 0.00878,
+   "p_vs_mid": 0.777
+  },
+  "Glandular": {
+   "proliferative": 0.0,
+   "secretory_mid": 0.104,
+   "treated": 0.001,
+   "p_vs_proliferative": 0.0789,
+   "p_vs_mid": 0.00533
+  },
+  "Glandular_secretory": {
+   "proliferative": 0.0,
+   "secretory_mid": 0.378,
+   "treated": 0.002,
+   "p_vs_proliferative": 3.73e-05,
+   "p_vs_mid": 0.0379
+  },
+  "Glandular_secretory_FGF7": {
+   "proliferative": 0.0,
+   "secretory_mid": 0.005,
+   "treated": 0.0,
+   "p_vs_proliferative": 0.179,
+   "p_vs_mid": 0.0147
+  },
+  "KRT5": {
+   "proliferative": 0.0,
+   "secretory_mid": 0.0,
+   "treated": 0.024,
+   "p_vs_proliferative": 0.017,
+   "p_vs_mid": 0.037
+  },
+  "Luminal": {
+   "proliferative": 0.0,
+   "secretory_mid": 0.01,
+   "treated": 0.003,
+   "p_vs_proliferative": 0.0288,
+   "p_vs_mid": 0.0918
+  },
+  "MUC5B": {
+   "proliferative": 0.003,
+   "secretory_mid": 0.0,
+   "treated": 0.082,
+   "p_vs_proliferative": 0.00218,
+   "p_vs_mid": 0.012
+  },
+  "SOX9_basalis": {
+   "proliferative": 0.0,
+   "secretory_mid": 0.0,
+   "treated": 0.0,
+   "p_vs_proliferative": 0.591,
+   "p_vs_mid": 0.3
+  },
+  "SOX9_functionalis_I": {
+   "proliferative": 0.001,
+   "secretory_mid": 0.0,
+   "treated": 0.0,
+   "p_vs_proliferative": 0.00171,
+   "p_vs_mid": 0.0732
+  },
+  "SOX9_functionalis_II": {
+   "proliferative": 0.563,
+   "secretory_mid": 0.0,
+   "treated": 0.004,
+   "p_vs_proliferative": 1.79e-05,
+   "p_vs_mid": 0.174
+  },
+  "SOX9_luminal": {
+   "proliferative": 0.046,
+   "secretory_mid": 0.002,
+   "treated": 0.006,
+   "p_vs_proliferative": 0.00105,
+   "p_vs_mid": 0.355
+  },
+  "eHormones": {
+   "proliferative": 0.01,
+   "secretory_mid": 0.013,
+   "treated": 0.733,
+   "p_vs_proliferative": 0.000239,
+   "p_vs_mid": 0.0005
+  },
+  "preCiliated": {
+   "proliferative": 0.007,
+   "secretory_mid": 0.0,
+   "treated": 0.001,
+   "p_vs_proliferative": 0.134,
+   "p_vs_mid": 0.0559
+  },
+  "preGlandular": {
+   "proliferative": 0.002,
+   "secretory_mid": 0.004,
+   "treated": 0.0,
+   "p_vs_proliferative": 0.964,
+   "p_vs_mid": 0.462
+  },
+  "preLuminal": {
+   "proliferative": 0.0,
+   "secretory_mid": 0.003,
+   "treated": 0.001,
+   "p_vs_proliferative": 0.417,
+   "p_vs_mid": 0.409
+  }
+ },
+ "composition_stroma": {
+  "Fibroblast_basalis": {
+   "proliferative": 0.0,
+   "secretory_mid": 0.0,
+   "treated": 0.0,
+   "p_vs_proliferative": 0.389,
+   "p_vs_mid": 0.921
+  },
+  "HOXA13": {
+   "proliferative": 0.0,
+   "secretory_mid": 0.0,
+   "treated": 0.008,
+   "p_vs_proliferative": 0.00123,
+   "p_vs_mid": 0.0432
+  },
+  "dHormones": {
+   "proliferative": 0.0,
+   "secretory_mid": 0.0,
+   "treated": 0.0,
+   "p_vs_proliferative": 0.136,
+   "p_vs_mid": 0.921
+  },
+  "dStromal_early": {
+   "proliferative": 0.016,
+   "secretory_mid": 0.045,
+   "treated": 0.022,
+   "p_vs_proliferative": 0.811,
+   "p_vs_mid": 0.181
+  },
+  "dStromal_late": {
+   "proliferative": 0.001,
+   "secretory_mid": 0.022,
+   "treated": 0.0,
+   "p_vs_proliferative": 1.0,
+   "p_vs_mid": 0.0847
+  },
+  "dStromal_mid": {
+   "proliferative": 0.009,
+   "secretory_mid": 0.808,
+   "treated": 0.029,
+   "p_vs_proliferative": 0.231,
+   "p_vs_mid": 0.0028
+  },
+  "eStromal": {
+   "proliferative": 0.798,
+   "secretory_mid": 0.015,
+   "treated": 0.059,
+   "p_vs_proliferative": 0.000199,
+   "p_vs_mid": 0.689
+  },
+  "eStromal_MMPs": {
+   "proliferative": 0.003,
+   "secretory_mid": 0.001,
+   "treated": 0.025,
+   "p_vs_proliferative": 0.0472,
+   "p_vs_mid": 0.025
+  },
+  "eStromal_cycling": {
+   "proliferative": 0.075,
+   "secretory_mid": 0.003,
+   "treated": 0.007,
+   "p_vs_proliferative": 0.0472,
+   "p_vs_mid": 0.341
+  },
+  "sHormones": {
+   "proliferative": 0.003,
+   "secretory_mid": 0.005,
+   "treated": 0.668,
+   "p_vs_proliferative": 5.59e-05,
+   "p_vs_mid": 0.0016
+  }
+ }
+}

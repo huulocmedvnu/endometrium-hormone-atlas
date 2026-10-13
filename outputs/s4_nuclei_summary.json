@@ -1,0 +1,168 @@
+{
+ "set": "nuclei",
+ "treated_group": "progestin_only",
+ "main": {
+  "n_treated": 8,
+  "n_natural": 48,
+  "n_natural_secretory": 20,
+  "dys_median_treated": 0.337,
+  "p_h1": 0.00152,
+  "p_vs_secretory": 0.0276,
+  "residual_median_treated": -0.264,
+  "residual_median_natural": -0.028,
+  "p_s1_below_0": 0.0391,
+  "p_s1_vs_natural": 0.00531,
+  "s1_passed": true,
+  "perm_h1": 0.0038996100389961006,
+  "perm_s1": 0.0183981601839816
+ },
+ "s2_no_endometriosis": {
+  "n_treated": 3,
+  "n_natural": 13,
+  "n_natural_secretory": 4,
+  "dys_median_treated": 0.258,
+  "p_h1": 0.0125,
+  "p_vs_secretory": 0.2,
+  "residual_median_treated": -0.129,
+  "residual_median_natural": 0.056,
+  "p_s1_below_0": 0.25,
+  "p_s1_vs_natural": 0.261,
+  "s1_passed": false
+ },
+ "s2_endometriosis_only": {
+  "n_treated": 5,
+  "n_natural": 35,
+  "n_natural_secretory": 16,
+  "dys_median_treated": 0.4,
+  "p_h1": 0.0263,
+  "p_vs_secretory": 0.0765,
+  "residual_median_treated": -0.316,
+  "residual_median_natural": 0.004,
+  "p_s1_below_0": 0.156,
+  "p_s1_vs_natural": 0.0292,
+  "s1_passed": false
+ },
+ "s2_woi_no_endometriosis": {
+  "n_treated": 4,
+  "n_mid": 2,
+  "p": 0.267
+ },
+ "s3_per_drug": {
+  "LNG-IUS": {
+   "n": 2,
+   "stroma": 1.155,
+   "epithelium": 1.063,
+   "dyssynchrony": 0.092,
+   "residual": -0.032
+  },
+  "desogestrel": {
+   "n": 4,
+   "stroma": 1.86,
+   "epithelium": 1.2,
+   "dyssynchrony": 0.436,
+   "residual": -0.331
+  },
+  "implant": {
+   "n": 2,
+   "stroma": 0.93,
+   "epithelium": 0.664,
+   "dyssynchrony": 0.265,
+   "residual": -0.236
+  }
+ },
+ "s3_leave_one_drug_out": {
+  "LNG-IUS": {
+   "n_treated": 6,
+   "n_natural": 48,
+   "n_natural_secretory": 20,
+   "dys_median_treated": 0.337,
+   "p_h1": 0.000125,
+   "p_vs_secretory": 0.00969,
+   "residual_median_treated": -0.264,
+   "residual_median_natural": -0.028,
+   "p_s1_below_0": 0.0156,
+   "p_s1_vs_natural": 0.00126,
+   "s1_passed": true
+  },
+  "implant": {
+   "n_treated": 6,
+   "n_natural": 48,
+   "n_natural_secretory": 20,
+   "dys_median_treated": 0.436,
+   "p_h1": 0.00857,
+   "p_vs_secretory": 0.0475,
+   "residual_median_treated": -0.331,
+   "residual_median_natural": -0.028,
+   "p_s1_below_0": 0.0781,
+   "p_s1_vs_natural": 0.0236,
+   "s1_passed": false
+  },
+  "desogestrel": {
+   "n_treated": 4,
+   "n_natural": 48,
+   "n_natural_secretory": 20,
+   "dys_median_treated": 0.265,
+   "p_h1": 0.097,
+   "p_vs_secretory": 0.239,
+   "residual_median_treated": -0.236,
+   "residual_median_natural": -0.028,
+   "p_s1_below_0": 0.312,
+   "p_s1_vs_natural": 0.103,
+   "s1_passed": false
+  }
+ },
+ "s5": {
+  "hvg1000": {
+   "n_treated": 8,
+   "n_natural": 48,
+   "n_natural_secretory": 20,
+   "dys_median_treated": 0.291,
+   "p_h1": 0.00237,
+   "p_vs_secretory": 0.0495,
+   "residual_median_treated": -0.208,
+   "residual_median_natural": -0.016,
+   "p_s1_below_0": 0.0547,
+   "p_s1_vs_natural": 0.0232,
+   "s1_passed": false
+  },
+  "hvg5000": {
+   "n_treated": 8,
+   "n_natural": 48,
+   "n_natural_secretory": 20,
+   "dys_median_treated": 0.361,
+   "p_h1": 0.00127,
+   "p_vs_secretory": 0.0164,
+   "residual_median_treated": -0.296,
+   "residual_median_natural": -0.016,
+   "p_s1_below_0": 0.0273,
+   "p_s1_vs_natural": 0.00665,
+   "s1_passed": true
+  },
+  "min100": {
+   "n_treated": 7,
+   "n_natural": 45,
+   "n_natural_secretory": 19,
+   "dys_median_treated": 0.279,
+   "p_h1": 0.00144,
+   "p_vs_secretory": 0.0238,
+   "residual_median_treated": -0.192,
+   "residual_median_natural": -0.01,
+   "p_s1_below_0": 0.0234,
+   "p_s1_vs_natural": 0.0043,
+   "s1_passed": true
+  },
+  "specific_genes": {
+   "n_treated": 8,
+   "n_natural": 48,
+   "n_natural_secretory": 20,
+   "dys_median_treated": 0.432,
+   "p_h1": 0.00042,
+   "p_vs_secretory": 0.00785,
+   "residual_median_treated": -0.415,
+   "residual_median_natural": 0.004,
+   "p_s1_below_0": 0.0195,
+   "p_s1_vs_natural": 0.00152,
+   "s1_passed": true
+  }
+ }
+}

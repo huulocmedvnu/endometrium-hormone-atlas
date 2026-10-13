@@ -1,0 +1,62 @@
+{
+ "stroma": {
+  "nuclei": {
+   "secretory_cases": 10,
+   "secretory_controls": 2,
+   "residual_median_cases": -0.295,
+   "residual_median_controls": -1.529,
+   "p_cases_lower": NaN,
+   "rho_rasrm": 0.447,
+   "p_rasrm_negative": 0.928,
+   "controls_residual_p_two_sided": 0.922,
+   "age_partial_rho": -0.212,
+   "age_p": 0.214,
+   "donors_age": 36
+  },
+  "cells": {
+   "secretory_cases": 5,
+   "secretory_controls": 14,
+   "residual_median_cases": -0.473,
+   "residual_median_controls": -0.144,
+   "p_cases_lower": 0.0534,
+   "rho_rasrm": -0.341,
+   "p_rasrm_negative": 0.0765,
+   "controls_residual_p_two_sided": 0.679,
+   "age_partial_rho": 0.369,
+   "age_p": 0.049,
+   "donors_age": 29
+  },
+  "combined_p_cases_lower": 0.0534,
+  "combined_p_rasrm_negative": 0.509
+ },
+ "epithelium": {
+  "nuclei": {
+   "secretory_cases": 10,
+   "secretory_controls": 2,
+   "residual_median_cases": -0.725,
+   "residual_median_controls": -1.711,
+   "p_cases_lower": NaN,
+   "rho_rasrm": 0.34,
+   "p_rasrm_negative": 0.86,
+   "controls_residual_p_two_sided": 0.625,
+   "age_partial_rho": -0.211,
+   "age_p": 0.216,
+   "donors_age": 36
+  },
+  "cells": {
+   "secretory_cases": 5,
+   "secretory_controls": 12,
+   "residual_median_cases": -0.388,
+   "residual_median_controls": -0.071,
+   "p_cases_lower": 0.00194,
+   "rho_rasrm": -0.644,
+   "p_rasrm_negative": 0.00262,
+   "controls_residual_p_two_sided": 0.56,
+   "age_partial_rho": 0.191,
+   "age_p": 0.329,
+   "donors_age": 28
+  },
+  "combined_p_cases_lower": 0.00194,
+  "combined_p_rasrm_negative": 0.113
+ }
+}

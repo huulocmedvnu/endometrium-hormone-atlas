@@ -1,0 +1,344 @@
+{
+ "nuclei": {
+  "r18_models": {
+   "ridge": {
+    "stroma": {
+     "n": 36,
+     "mae": 0.161,
+     "rmse": 0.252,
+     "rho": 0.809,
+     "calibration_slope": 0.896,
+     "early_secretory_median": 0.593
+    },
+    "epithelium": {
+     "n": 36,
+     "mae": 0.236,
+     "rmse": 0.382,
+     "rho": 0.771,
+     "calibration_slope": 0.807,
+     "early_secretory_median": 0.412
+    },
+    "h1": {
+     "n_exposed": 8,
+     "index_shift": 0.373,
+     "p_index": 0.00152,
+     "p_residual": 0.00531
+    }
+   },
+   "elastic_net": {
+    "stroma": {
+     "n": 36,
+     "mae": 0.182,
+     "rmse": 0.262,
+     "rho": 0.804,
+     "calibration_slope": 0.896,
+     "early_secretory_median": 0.665
+    },
+    "epithelium": {
+     "n": 36,
+     "mae": 0.302,
+     "rmse": 0.441,
+     "rho": 0.755,
+     "calibration_slope": 0.882,
+     "early_secretory_median": 0.409
+    },
+    "h1": {
+     "n_exposed": 8,
+     "index_shift": 0.255,
+     "p_index": 0.0261,
+     "p_residual": 0.0497
+    }
+   },
+   "multinomial_logistic": {
+    "stroma": {
+     "n": 36,
+     "mae": 0.123,
+     "rmse": 0.286,
+     "rho": 0.782,
+     "calibration_slope": 0.926,
+     "early_secretory_median": 0.081
+    },
+    "epithelium": {
+     "n": 36,
+     "mae": 0.161,
+     "rmse": 0.428,
+     "rho": 0.762,
+     "calibration_slope": 0.825,
+     "early_secretory_median": 0.17
+    },
+    "h1": {
+     "n_exposed": 8,
+     "index_shift": 0.074,
+     "p_index": 0.234,
+     "p_residual": 0.766
+    }
+   },
+   "knn": {
+    "stroma": {
+     "n": 36,
+     "mae": 0.228,
+     "rmse": 0.401,
+     "rho": 0.784,
+     "calibration_slope": 0.73,
+     "early_secretory_median": 0.0
+    },
+    "epithelium": {
+     "n": 36,
+     "mae": 0.228,
+     "rmse": 0.456,
+     "rho": 0.729,
+     "calibration_slope": 0.749,
+     "early_secretory_median": 0.0
+    },
+    "h1": {
+     "n_exposed": 8,
+     "index_shift": 0.2,
+     "p_index": 0.0647,
+     "p_residual": 0.159
+    }
+   },
+   "marker_score": {
+    "stroma": {
+     "n": 36,
+     "mae": 0.261,
+     "rmse": 0.354,
+     "rho": 0.8,
+     "calibration_slope": 0.805,
+     "early_secretory_median": 0.711
+    },
+    "epithelium": {
+     "n": 36,
+     "mae": 0.244,
+     "rmse": 0.368,
+     "rho": 0.78,
+     "calibration_slope": 0.805,
+     "early_secretory_median": 0.424
+    },
+    "h1": {
+     "n_exposed": 8,
+     "index_shift": 0.237,
+     "p_index": 0.0473,
+     "p_residual": 0.136
+    }
+   }
+  },
+  "r16_calibration": {
+   "stroma_map": [
+    1.021,
+    -0.022
+   ],
+   "stroma_early_secretory_after": 0.583,
+   "epithelium_map": [
+    0.997,
+    -0.021
+   ],
+   "epithelium_early_secretory_after": 0.39,
+   "n_exposed": 8,
+   "index_shift": 0.388,
+   "p_index": 0.00127,
+   "p_residual": 0.00531,
+   "exposed_medians": {
+    "stroma": 1.491,
+    "epithelium": 0.84
+   }
+  },
+  "r17_bootstrap": {
+   "replicates": 200,
+   "shift_median": 0.287,
+   "shift_interval": [
+    0.144,
+    0.443
+   ],
+   "p_median": 0.00881,
+   "share_p_below_005": 0.865,
+   "exposed_with_interval_above_0": "3/8"
+  }
+ },
+ "r15_wang": {
+  "genes": 16708,
+  "donors": 10,
+  "stroma": {
+   "n": 9,
+   "rho": 0.823,
+   "mae": 0.22,
+   "by_phase": {
+    "Proliferative": -0.101,
+    "Secretory Early": 0.884,
+    "Secretory Early-Mid": 1.21,
+    "Secretory Mid": 1.455
+   },
+   "late_secretory": [
+    1.565
+   ]
+  },
+  "epithelium": {
+   "n": 9,
+   "rho": 0.962,
+   "mae": 0.304,
+   "by_phase": {
+    "Proliferative": -0.161,
+    "Secretory Early": 0.77,
+    "Secretory Early-Mid": 1.233,
+    "Secretory Mid": 1.47
+   },
+   "late_secretory": [
+    1.441
+   ]
+  }
+ },
+ "cells": {
+  "r18_models": {
+   "ridge": {
+    "stroma": {
+     "n": 34,
+     "mae": 0.282,
+     "rmse": 0.362,
+     "rho": 0.824,
+     "calibration_slope": 0.776,
+     "early_secretory_median": 1.385
+    },
+    "epithelium": {
+     "n": 32,
+     "mae": 0.197,
+     "rmse": 0.279,
+     "rho": 0.852,
+     "calibration_slope": 0.866,
+     "early_secretory_median": 1.205
+    },
+    "h1": {
+     "n_exposed": 9,
+     "index_shift": 0.215,
+     "p_index": 0.0177,
+     "p_residual": 0.0155
+    }
+   },
+   "elastic_net": {
+    "stroma": {
+     "n": 34,
+     "mae": 0.319,
+     "rmse": 0.413,
+     "rho": 0.813,
+     "calibration_slope": 0.856,
+     "early_secretory_median": 1.45
+    },
+    "epithelium": {
+     "n": 32,
+     "mae": 0.238,
+     "rmse": 0.376,
+     "rho": 0.852,
+     "calibration_slope": 0.986,
+     "early_secretory_median": 1.193
+    },
+    "h1": {
+     "n_exposed": 9,
+     "index_shift": 0.04,
+     "p_index": 0.423,
+     "p_residual": 0.413
+    }
+   },
+   "multinomial_logistic": {
+    "stroma": {
+     "n": 34,
+     "mae": 0.23,
+     "rmse": 0.43,
+     "rho": 0.794,
+     "calibration_slope": 0.835,
+     "early_secretory_median": 1.616
+    },
+    "epithelium": {
+     "n": 32,
+     "mae": 0.123,
+     "rmse": 0.283,
+     "rho": 0.849,
+     "calibration_slope": 0.874,
+     "early_secretory_median": 1.012
+    },
+    "h1": {
+     "n_exposed": 9,
+     "index_shift": 0.008,
+     "p_index": 0.403,
+     "p_residual": 0.281
+    }
+   },
+   "knn": {
+    "stroma": {
+     "n": 34,
+     "mae": 0.247,
+     "rmse": 0.397,
+     "rho": 0.866,
+     "calibration_slope": 0.725,
+     "early_secretory_median": 1.4
+    },
+    "epithelium": {
+     "n": 32,
+     "mae": 0.188,
+     "rmse": 0.377,
+     "rho": 0.826,
+     "calibration_slope": 0.717,
+     "early_secretory_median": 0.9
+    },
+    "h1": {
+     "n_exposed": 9,
+     "index_shift": 0.4,
+     "p_index": 0.0507,
+     "p_residual": 0.0321
+    }
+   },
+   "marker_score": {
+    "stroma": {
+     "n": 34,
+     "mae": 0.342,
+     "rmse": 0.425,
+     "rho": 0.799,
+     "calibration_slope": 0.69,
+     "early_secretory_median": 1.226
+    },
+    "epithelium": {
+     "n": 32,
+     "mae": 0.254,
+     "rmse": 0.38,
+     "rho": 0.825,
+     "calibration_slope": 0.736,
+     "early_secretory_median": 0.82
+    },
+    "h1": {
+     "n_exposed": 9,
+     "index_shift": 0.014,
+     "p_index": 0.444,
+     "p_residual": 0.433
+    }
+   }
+  },
+  "r16_calibration": {
+   "stroma_map": [
+    1.015,
+    -0.068
+   ],
+   "stroma_early_secretory_after": 1.339,
+   "epithelium_map": [
+    1.011,
+    -0.031
+   ],
+   "epithelium_early_secretory_after": 1.187,
+   "n_exposed": 9,
+   "index_shift": 0.218,
+   "p_index": 0.0177,
+   "p_residual": 0.0155,
+   "exposed_medians": {
+    "stroma": 0.837,
+    "epithelium": 0.739
+   }
+  },
+  "r17_bootstrap": {
+   "replicates": 200,
+   "shift_median": 0.185,
+   "shift_interval": [
+    -0.049,
+    0.421
+   ],
+   "p_median": 0.0685,
+   "share_p_below_005": 0.41,
+   "exposed_with_interval_above_0": "3/9"
+  }
+ }
+}

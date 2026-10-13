@@ -1,0 +1,40 @@
+{
+ "min_nuclei_sublineage": 30,
+ "lodo_rho": {
+  "stroma": 0.809,
+  "luminal": 0.764,
+  "glandular": 0.82,
+  "glandular_eh": 0.82
+ },
+ "basalis_share_median": {
+  "natural": 0.0049,
+  "progestin_only": 0.0
+ },
+ "luminal": {
+  "n_treated": 3,
+  "n_natural": 34,
+  "sub_median_treated": 0.821,
+  "stroma_median_treated": 1.12,
+  "residual_treated": -0.118,
+  "p_residual": 0.0404,
+  "p_index": 0.00862
+ },
+ "glandular": {
+  "n_treated": 6,
+  "n_natural": 44,
+  "sub_median_treated": 1.243,
+  "stroma_median_treated": 1.481,
+  "residual_treated": -0.195,
+  "p_residual": 0.00181,
+  "p_index": 0.000952
+ },
+ "glandular_with_ehormones": {
+  "n_treated": 8,
+  "n_natural": 45,
+  "sub_median_treated": 0.769,
+  "stroma_median_treated": 1.481,
+  "residual_treated": -0.347,
+  "p_residual": 0.00054,
+  "p_index": 0.00021
+ }
+}

@@ -1,0 +1,18 @@
+cohort,exposure,measure,comparator,shift,ci_low,ci_high,n_exposed,n_comparator
+HECA snRNA-seq,progestin only,position-matched epithelial residual,natural,-0.2534,-0.4856,-0.0554,8,48
+HECA snRNA-seq,progestin only,dyssynchrony,natural,0.373,0.1724,0.589,8,48
+HECA snRNA-seq,progestin only,epithelial WOI score,natural mid-secretory,-0.9873,-1.251,-0.284,10,9
+HECA scRNA-seq,combined pill,position-matched epithelial residual,natural,-0.2157,-0.4061,-0.0355,9,40
+HECA scRNA-seq,combined pill,dyssynchrony,natural,0.215,0.03808,0.3929,9,40
+HECA scRNA-seq,combined pill,epithelial WOI score,natural mid-secretory,-0.9895,-1.312,-0.418,10,6
+Huang 2026,programmed FET cycle,dyssynchrony (unscaled),natural cycle,0.0661,-0.1842,0.2103,7,7
+Huang 2026,programmed FET cycle,dyssynchrony (zscored),natural cycle,0.292,0.1142,0.5456,7,7
+Huang 2026,programmed FET cycle,epithelial WOI score,natural cycle,-1.256,-1.421,-0.3569,7,9
+GSE60129,"LNG-IUS, DMPA",dyssynchrony,mid-secretory control,0.4309,0.212,0.6708,21,12
+GSE60129,"LNG-IUS, DMPA",epithelium clock,mid-secretory control,-0.6495,-1.042,-0.2576,21,12
+GSE60129,"LNG-IUS, DMPA",stroma clock,mid-secretory control,-0.1789,-0.4274,0.1125,21,12
+GSE60129,"LNG-IUS, DMPA",epithelial WOI score,mid-secretory control,-0.7316,-1.334,0.2209,21,12
+GSE137765,"LNG-IUS, combined pill",dyssynchrony,non-hormonal,0.2851,0.1432,0.4653,23,24
+GSE137765,"LNG-IUS, combined pill",epithelium clock,non-hormonal,-0.3952,-0.5971,-0.115,23,24
+GSE137765,"LNG-IUS, combined pill",stroma clock,non-hormonal,-0.1198,-0.3251,0.1529,23,24
+GSE137765,"LNG-IUS, combined pill",epithelial WOI score,non-hormonal,-0.6245,-0.9968,-0.2422,23,24

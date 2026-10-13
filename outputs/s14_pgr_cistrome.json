@@ -1,0 +1,56 @@
+{
+ "genes_scored": 17981,
+ "flank_bp": 10000,
+ "nuclei_epithelium": {
+  "n_follow": 23,
+  "n_stay": 88,
+  "mid_follow": 3.4586,
+  "mid_stay": 2.3862,
+  "p_follow_more_bound": 0.107,
+  "change_follow": 1.6117,
+  "change_stay": 1.6541,
+  "p_change": 0.284,
+  "mid_all_up": 2.7639,
+  "mid_background": 2.4358,
+  "p_up_vs_background": 0.00794
+ },
+ "nuclei_stroma": {
+  "n_follow": 78,
+  "n_stay": 37,
+  "mid_follow": 4.2381,
+  "mid_stay": 5.2418,
+  "p_follow_more_bound": 0.655,
+  "change_follow": 2.3989,
+  "change_stay": 3.226,
+  "p_change": 0.934,
+  "mid_all_up": 4.7431,
+  "mid_background": 2.4358,
+  "p_up_vs_background": 4.48e-16
+ },
+ "cells_combined_pill_epithelium": {
+  "n_follow": 26,
+  "n_stay": 110,
+  "mid_follow": 4.1159,
+  "mid_stay": 5.5581,
+  "p_follow_more_bound": 0.925,
+  "change_follow": 2.1851,
+  "change_stay": 3.3463,
+  "p_change": 0.889,
+  "mid_all_up": 4.5834,
+  "mid_background": 2.4358,
+  "p_up_vs_background": 1.62e-14
+ },
+ "cells_combined_pill_stroma": {
+  "n_follow": 62,
+  "n_stay": 67,
+  "mid_follow": 6.7216,
+  "mid_stay": 10.8788,
+  "p_follow_more_bound": 0.996,
+  "change_follow": 3.1589,
+  "change_stay": 5.2179,
+  "p_change": 1.0,
+  "mid_all_up": 7.7309,
+  "mid_background": 2.4358,
+  "p_up_vs_background": 2.47e-49
+ }
+}

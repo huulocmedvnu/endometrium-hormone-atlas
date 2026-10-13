@@ -1,0 +1,120 @@
+{
+ "genes_shared": 14406,
+ "rc0_stroma": {
+  "heca_lodo_rho": 0.817,
+  "genes": 1145,
+  "natural_array_rho": 0.912,
+  "natural_array_median_by_phase": {
+   "0": 0.223,
+   "1": 1.296,
+   "2": 1.578
+  }
+ },
+ "rc0_epithelium": {
+  "heca_lodo_rho": 0.804,
+  "genes": 1201,
+  "natural_array_rho": 0.912,
+  "natural_array_median_by_phase": {
+   "0": -0.095,
+   "1": 1.045,
+   "2": 1.663
+  }
+ },
+ "rc0_passed": true,
+ "natural_line": {
+  "n": 31,
+  "slope": 1.274,
+  "intercept": -0.427
+ },
+ "gse60129": {
+  "n": {
+   "LNG-IUS": 13,
+   "control": 12,
+   "DMPA": 8
+  },
+  "medians": {
+   "DMPA": {
+    "stroma": 1.392,
+    "epithelium": 1.085,
+    "residual": -0.105
+   },
+   "LNG-IUS": {
+    "stroma": 1.853,
+    "epithelium": 0.867,
+    "residual": -1.363
+   },
+   "control": {
+    "stroma": 2.153,
+    "epithelium": 2.209,
+    "residual": -0.048
+   }
+  },
+  "rc1_controls_residual_p_two_sided": 0.85,
+  "p_treated_below_natural_arrays": 0.000111,
+  "p_treated_below_own_controls": 0.00416,
+  "adjusted_for_content": {
+   "coef": -0.416,
+   "ci": [
+    -0.96,
+    0.127
+   ],
+   "p": 0.133
+  },
+  "per_drug": {
+   "LNG-IUS": 0.000184,
+   "DMPA": 0.367
+  }
+ },
+ "gse137765": {
+  "n": {
+   "cu-IUD": 13,
+   "COC": 12,
+   "LNG-IUD": 11,
+   "control": 11
+  },
+  "medians": {
+   "COC": {
+    "stroma": 1.37,
+    "epithelium": 1.106,
+    "residual": -0.093
+   },
+   "LNG-IUD": {
+    "stroma": 1.276,
+    "epithelium": 0.425,
+    "residual": -0.8
+   },
+   "control": {
+    "stroma": 1.257,
+    "epithelium": 1.215,
+    "residual": -0.036
+   },
+   "cu-IUD": {
+    "stroma": 1.488,
+    "epithelium": 1.228,
+    "residual": -0.235
+   }
+  },
+  "rc1_controls_residual_p_two_sided": null,
+  "p_treated_below_natural_arrays": 0.000157,
+  "p_treated_below_own_controls": 0.00293,
+  "adjusted_for_content": {
+   "coef": -0.086,
+   "ci": [
+    -0.313,
+    0.141
+   ],
+   "p": 0.459
+  },
+  "per_drug": {
+   "LNG-IUD": 2.94e-06,
+   "COC": 0.48
+  }
+ },
+ "exploratory_endometriosis": {
+  "n_endo": 21,
+  "n_normal": 16,
+  "residual_endo": 0.21,
+  "residual_normal": 0.069,
+  "p_two_sided": 0.399
+ }
+}

@@ -1,0 +1,208 @@
+donor,compartment,group,treatment,stage,pathology,y,clock,n,woi_score
+EX0045,stroma,natural,,Proliferative,E,0,0.007518,2934,0.4775
+EX0277,stroma,natural,,Secretory,E + F,,1.568,649,0.8121
+EX0288,stroma,natural,,Proliferative,E + H,0,0.2299,941,0.5577
+EX0366,stroma,natural,,Secretory Mid,E + A + F,2,2.163,6264,1.977
+EX0540,stroma,natural,,Proliferative,E + A + F,0,-0.05255,2125,0.4071
+EX0661,stroma,natural,,Secretory Mid,E,2,2.011,113,2.214
+EX0789,stroma,natural,,Secretory Mid,E + F,2,1.526,424,1.953
+EX0795,stroma,natural,,Proliferative,E,0,0.1013,473,0.451
+FX0011,stroma,natural,,Proliferative,C,0,0.06636,2423,0.4742
+FX0022,stroma,natural,,Menstrual,E,,0.4586,2164,0.8327
+FX0024,stroma,progestin_only,Mirena coil,Hormones,E,,1.854,675,1.236
+FX0028,stroma,natural,,Secretory,C,,1.07,1841,0.6152
+FX0033,stroma,natural,,Secretory,E + A,,1.474,1322,0.6846
+FX0052,stroma,natural,,Proliferative Disordered,F + P,0,0.08149,6651,0.503
+FX0056,stroma,natural,,Menstrual,E,,0.2567,2289,0.8337
+FX0060,stroma,natural,,Proliferative,E + A,0,0.07251,1490,0.5727
+FX0065,stroma,progestin_only,Mirena coil,Hormones,E,,0.4554,1173,0.8551
+FX1080,stroma,progestin_only,Implant,Hormones,E,,0.7384,838,0.725
+FX1087,stroma,natural,,Secretory Mid,E,2,1.994,4845,1.874
+FX1097,stroma,natural,,Proliferative,E,0,-0.02498,5220,0.4267
+FX1100,stroma,natural,,Secretory Mid,E,2,1.835,679,2.283
+FX1101,stroma,natural,,Proliferative,E + F,0,0.1129,7366,0.4965
+FX1104,stroma,natural,,Proliferative Late,P,0,0.03531,4880,0.4914
+FX1106,stroma,natural,,Secretory Mid,C,2,1.989,147,2.163
+FX1111,stroma,other_Zoladex,Zoladex,Hormones,E,,1.165,196,0.8047
+FX1119,stroma,natural,,Proliferative,C,0,-0.03079,226,0.4913
+FX1122,stroma,combined_pill,COCP (Rigevidon),Hormones,C,,0.1883,2060,0.5728
+FX1125,stroma,natural,,Proliferative,E,0,0.1021,751,0.6574
+FX1129,stroma,natural,,Proliferative,E,0,-0.01727,509,0.6759
+FX1130,stroma,natural,,Secretory Early,E + A,1,0.1589,1719,0.754
+FX1136,stroma,natural,,Proliferative,E,0,0.3832,1111,0.8221
+FX1141,stroma,natural,,Proliferative Menstrual,C,0,0.7234,61,0.6272
+FX1146,stroma,natural,,Proliferative,C,0,0.05853,4822,0.438
+FX1150,stroma,natural,,Proliferative,E,0,0.3038,3011,0.716
+FX1156,stroma,natural,,Secretory Mid,E + F,2,1.892,803,1.513
+FX1158,stroma,natural,,Menstrual,E + F,,0.4161,764,0.7439
+FX1160,stroma,natural,,Proliferative,E,0,0.09718,614,0.5443
+FX1163,stroma,natural,,Secretory,E,,0.764,1405,0.5388
+FX1170,stroma,natural,,Secretory,E,,1.393,5094,0.6271
+FX1191,stroma,progestin_only,POP Desogesterol,Hormones,E,,1.957,235,0.8819
+FX1205,stroma,natural,,Secretory,E,,0.1218,849,0.6337
+FX1215,stroma,natural,,Proliferative,E,0,0.08221,57,0.5321
+FX1223,stroma,natural,,Secretory Early,E,1,1.407,190,1.217
+FX1233,stroma,natural,,Secretory,E,,1.063,1827,0.6938
+FX1236,stroma,natural,,Proliferative,E + A + P,0,-0.06885,4026,0.5497
+FX9005,stroma,natural,,Proliferative,E,0,-0.07278,5199,0.4429
+FX9006,stroma,natural,,Secretory Early,E,1,0.5925,9688,0.6349
+FX9007,stroma,progestin_only,POP - Cerezette,Hormones,C,,1.199,1441,0.9946
+FX9008,stroma,natural,,Secretory,C,,1.922,1395,1.43
+FX9009,stroma,natural,,Menstrual,C,,-0.01361,1905,0.8791
+FX9011,stroma,natural,,Secretory Mid,C,2,1.881,2289,0.8944
+FX9012,stroma,progestin_only,POP,Hormones,E,,1.764,65,1.736
+FX9013,stroma,combined_pill,COCP - Gederal,Hormones,E,,1.753,2248,0.9187
+FX9018,stroma,progestin_only,Implant,Hormones,C,,1.121,3657,0.7698
+FX9020,stroma,natural,,Proliferative,E,0,-0.09578,1822,0.5889
+FX9021,stroma,progestin_only,POP - Desogestrel,Hormones,C,,2.079,2646,1.923
+FX9022,stroma,natural,,Secretory Mid,E,2,1.836,2947,1.849
+FX9024,stroma,natural,,Proliferative,C,0,0.03317,2712,0.4496
+FX9027,stroma,natural,,Proliferative,P,0,-0.07198,1008,0.4959
+EX0045,epithelium,natural,,Proliferative,E,0,-0.02884,3153,0.4775
+EX0277,epithelium,natural,,Secretory,E + F,,1.403,2604,0.8121
+EX0288,epithelium,natural,,Proliferative,E + H,0,0.1077,3089,0.5577
+EX0366,epithelium,natural,,Secretory Mid,E + A + F,2,1.68,1511,1.977
+EX0540,epithelium,natural,,Proliferative,E + A + F,0,-0.03693,4194,0.4071
+EX0661,epithelium,natural,,Secretory Mid,E,2,2.086,3308,2.214
+EX0789,epithelium,natural,,Secretory Mid,E + F,2,1.625,1642,1.953
+EX0795,epithelium,natural,,Proliferative,E,0,-0.0172,5078,0.451
+FX0011,epithelium,natural,,Proliferative,C,0,-0.03554,3074,0.4742
+FX0022,epithelium,natural,,Menstrual,E,,0.4893,2070,0.8327
+FX0024,epithelium,progestin_only,Mirena coil,Hormones,E,,1.263,585,1.236
+FX0028,epithelium,natural,,Secretory,C,,1.053,3478,0.6152
+FX0033,epithelium,natural,,Secretory,E + A,,1.133,3068,0.6846
+FX0052,epithelium,natural,,Proliferative Disordered,F + P,0,0.2837,230,0.503
+FX0056,epithelium,natural,,Menstrual,E,,0.416,1460,0.8337
+FX0060,epithelium,natural,,Proliferative,E + A,0,0.1037,3245,0.5727
+FX0065,epithelium,progestin_only,Mirena coil,Hormones,E,,0.8622,990,0.8551
+FX1080,epithelium,progestin_only,Implant,Hormones,E,,0.4642,849,0.725
+FX1087,epithelium,natural,,Secretory Mid,E,2,2.092,7592,1.874
+FX1097,epithelium,natural,,Proliferative,E,0,0.06022,2933,0.4267
+FX1100,epithelium,natural,,Secretory Mid,E,2,2.254,3383,2.283
+FX1101,epithelium,natural,,Proliferative,E + F,0,0.06085,13266,0.4965
+FX1104,epithelium,natural,,Proliferative Late,P,0,0.1039,1221,0.4914
+FX1106,epithelium,natural,,Secretory Mid,C,2,2.104,1648,2.163
+FX1111,epithelium,other_Zoladex,Zoladex,Hormones,E,,0.5904,541,0.8047
+FX1119,epithelium,natural,,Proliferative,C,0,0.2854,2466,0.4913
+FX1122,epithelium,combined_pill,COCP (Rigevidon),Hormones,C,,0.02324,1818,0.5728
+FX1125,epithelium,natural,,Proliferative,E,0,0.1054,2265,0.6574
+FX1129,epithelium,natural,,Proliferative,E,0,0.5424,826,0.6759
+FX1130,epithelium,natural,,Secretory Early,E + A,1,0.2574,1860,0.754
+FX1136,epithelium,natural,,Proliferative,E,0,0.5195,1087,0.8221
+FX1141,epithelium,natural,,Proliferative Menstrual,C,0,1.093,936,0.6272
+FX1146,epithelium,natural,,Proliferative,C,0,-0.01162,928,0.438
+FX1150,epithelium,natural,,Proliferative,E,0,0.3543,1376,0.716
+FX1156,epithelium,natural,,Secretory Mid,E + F,2,1.852,1857,1.513
+FX1158,epithelium,natural,,Menstrual,E + F,,0.1561,372,0.7439
+FX1160,epithelium,natural,,Proliferative,E,0,0.02065,2840,0.5443
+FX1163,epithelium,natural,,Secretory,E,,0.67,4616,0.5388
+FX1170,epithelium,natural,,Secretory,E,,0.9848,5635,0.6271
+FX1191,epithelium,progestin_only,POP Desogesterol,Hormones,E,,1.036,563,0.8819
+FX1205,epithelium,natural,,Secretory,E,,0.4444,53,0.6337
+FX1215,epithelium,natural,,Proliferative,E,0,0.4376,2873,0.5321
+FX1223,epithelium,natural,,Secretory Early,E,1,0.9617,608,1.217
+FX1233,epithelium,natural,,Secretory,E,,1.255,4571,0.6938
+FX1236,epithelium,natural,,Proliferative,E + A + P,0,0.01115,1234,0.5497
+FX9005,epithelium,natural,,Proliferative,E,0,-0.08155,2521,0.4429
+FX9006,epithelium,natural,,Secretory Early,E,1,0.412,5623,0.6349
+FX9007,epithelium,progestin_only,POP - Cerezette,Hormones,C,,0.727,764,0.9946
+FX9008,epithelium,natural,,Secretory,C,,1.732,3533,1.43
+FX9009,epithelium,natural,,Menstrual,C,,0.6291,119,0.8791
+FX9010,epithelium,progestin_only,Implant,Hormones,C,,0.7275,1158,0.6226
+FX9011,epithelium,natural,,Secretory Mid,C,2,0.7039,2241,0.8944
+FX9012,epithelium,progestin_only,POP,Hormones,E,,1.363,2336,1.736
+FX9013,epithelium,combined_pill,COCP - Gederal,Hormones,E,,0.936,901,0.9187
+FX9014,epithelium,progestin_only,Mirena coil,Hormones,E,,0.7723,81,0.7762
+FX9016,epithelium,natural,,Unknown,C,,0.6952,841,0.5729
+FX9018,epithelium,progestin_only,Implant,Hormones,C,,0.8646,1931,0.7698
+FX9020,epithelium,natural,,Proliferative,E,0,-0.02194,1401,0.5889
+FX9021,epithelium,progestin_only,POP - Desogestrel,Hormones,C,,1.821,4343,1.923
+FX9022,epithelium,natural,,Secretory Mid,E,2,1.939,920,1.849
+FX9024,epithelium,natural,,Proliferative,C,0,0.02869,2205,0.4496
+FX9027,epithelium,natural,,Proliferative,P,0,-0.04183,3928,0.4959
+EX0366,endothelium,natural,,Secretory Mid,E + A + F,2,1.795,303,1.977
+EX0540,endothelium,natural,,Proliferative,E + A + F,0,-0.03708,75,0.4071
+EX0789,endothelium,natural,,Secretory Mid,E + F,2,0.8802,53,1.953
+FX0024,endothelium,progestin_only,Mirena coil,Hormones,E,,1.451,159,1.236
+FX0052,endothelium,natural,,Proliferative Disordered,F + P,0,-0.5145,65,0.503
+FX1087,endothelium,natural,,Secretory Mid,E,2,1.774,240,1.874
+FX1097,endothelium,natural,,Proliferative,E,0,0.2391,57,0.4267
+FX1100,endothelium,natural,,Secretory Mid,E,2,1.348,83,2.283
+FX1101,endothelium,natural,,Proliferative,E + F,0,0.7928,226,0.4965
+FX1104,endothelium,natural,,Proliferative Late,P,0,0.5001,77,0.4914
+FX1122,endothelium,combined_pill,COCP (Rigevidon),Hormones,C,,0.3122,96,0.5728
+FX1146,endothelium,natural,,Proliferative,C,0,0.05493,53,0.438
+FX1236,endothelium,natural,,Proliferative,E + A + P,0,0.9946,351,0.5497
+FX9005,endothelium,natural,,Proliferative,E,0,0.04375,109,0.4429
+FX9006,endothelium,natural,,Secretory Early,E,1,0.6126,116,0.6349
+FX9008,endothelium,natural,,Secretory,C,,1.654,64,1.43
+FX9011,endothelium,natural,,Secretory Mid,C,2,1.096,118,0.8944
+FX9012,endothelium,progestin_only,POP,Hormones,E,,1.251,86,1.736
+FX9013,endothelium,combined_pill,COCP - Gederal,Hormones,E,,1.391,147,0.9187
+FX9014,endothelium,progestin_only,Mirena coil,Hormones,E,,0.9676,58,0.7762
+FX9021,endothelium,progestin_only,POP - Desogestrel,Hormones,C,,2.167,126,1.923
+FX9022,endothelium,natural,,Secretory Mid,E,2,1.661,308,1.849
+FX9024,endothelium,natural,,Proliferative,C,0,0.2418,112,0.4496
+EX0045,immune,natural,,Proliferative,E,0,0.135,344,0.4775
+EX0277,immune,natural,,Secretory,E + F,,0.6372,155,0.8121
+EX0288,immune,natural,,Proliferative,E + H,0,0.388,298,0.5577
+EX0366,immune,natural,,Secretory Mid,E + A + F,2,2.069,840,1.977
+EX0540,immune,natural,,Proliferative,E + A + F,0,-0.2531,84,0.4071
+EX0661,immune,natural,,Secretory Mid,E,2,2.229,1420,2.214
+EX0789,immune,natural,,Secretory Mid,E + F,2,1.656,494,1.953
+EX0795,immune,natural,,Proliferative,E,0,0.1117,106,0.451
+FX0011,immune,natural,,Proliferative,C,0,0.04573,205,0.4742
+FX0022,immune,natural,,Menstrual,E,,0.3392,341,0.8327
+FX0024,immune,progestin_only,Mirena coil,Hormones,E,,1.054,1682,1.236
+FX0028,immune,natural,,Secretory,C,,0.8235,218,0.6152
+FX0033,immune,natural,,Secretory,E + A,,0.9474,192,0.6846
+FX0052,immune,natural,,Proliferative Disordered,F + P,0,0.4359,340,0.503
+FX0056,immune,natural,,Menstrual,E,,0.3492,391,0.8337
+FX0060,immune,natural,,Proliferative,E + A,0,0.01849,173,0.5727
+FX0065,immune,progestin_only,Mirena coil,Hormones,E,,1.362,281,0.8551
+FX1074,immune,progestin_only,Mirena coil,Hormones,E,,-0.004905,962,
+FX1080,immune,progestin_only,Implant,Hormones,E,,0.4813,504,0.725
+FX1087,immune,natural,,Secretory Mid,E,2,1.695,415,1.874
+FX1097,immune,natural,,Proliferative,E,0,0.02118,379,0.4267
+FX1100,immune,natural,,Secretory Mid,E,2,1.516,441,2.283
+FX1101,immune,natural,,Proliferative,E + F,0,0.1065,434,0.4965
+FX1104,immune,natural,,Proliferative Late,P,0,0.03562,260,0.4914
+FX1106,immune,natural,,Secretory Mid,C,2,2.239,1718,2.163
+FX1111,immune,other_Zoladex,Zoladex,Hormones,E,,0.5466,1475,0.8047
+FX1119,immune,natural,,Proliferative,C,0,-0.3639,360,0.4913
+FX1122,immune,combined_pill,COCP (Rigevidon),Hormones,C,,0.2968,418,0.5728
+FX1125,immune,natural,,Proliferative,E,0,0.4725,287,0.6574
+FX1129,immune,natural,,Proliferative,E,0,-0.1515,229,0.6759
+FX1130,immune,natural,,Secretory Early,E + A,1,0.6059,510,0.754
+FX1136,immune,natural,,Proliferative,E,0,-0.1409,1160,0.8221
+FX1141,immune,natural,,Proliferative Menstrual,C,0,0.6334,232,0.6272
+FX1146,immune,natural,,Proliferative,C,0,0.02366,195,0.438
+FX1150,immune,natural,,Proliferative,E,0,0.2145,847,0.716
+FX1156,immune,natural,,Secretory Mid,E + F,2,1.371,217,1.513
+FX1158,immune,natural,,Menstrual,E + F,,0.5103,289,0.7439
+FX1160,immune,natural,,Proliferative,E,0,0.5123,215,0.5443
+FX1163,immune,natural,,Secretory,E,,0.291,399,0.5388
+FX1170,immune,natural,,Secretory,E,,0.8759,569,0.6271
+FX1191,immune,progestin_only,POP Desogesterol,Hormones,E,,0.9159,403,0.8819
+FX1205,immune,natural,,Secretory,E,,0.115,97,0.6337
+FX1215,immune,natural,,Proliferative,E,0,0.4309,57,0.5321
+FX1223,immune,natural,,Secretory Early,E,1,0.8095,345,1.217
+FX1233,immune,natural,,Secretory,E,,0.5374,171,0.6938
+FX1236,immune,natural,,Proliferative,E + A + P,0,0.003182,1107,0.5497
+FX9005,immune,natural,,Proliferative,E,0,-0.09347,277,0.4429
+FX9006,immune,natural,,Secretory Early,E,1,0.4172,598,0.6349
+FX9007,immune,progestin_only,POP - Cerezette,Hormones,C,,1.246,2227,0.9946
+FX9008,immune,natural,,Secretory,C,,1.225,143,1.43
+FX9009,immune,natural,,Menstrual,C,,0.3825,207,0.8791
+FX9010,immune,progestin_only,Implant,Hormones,C,,0.2971,304,0.6226
+FX9011,immune,natural,,Secretory Mid,C,2,1.241,168,0.8944
+FX9012,immune,progestin_only,POP,Hormones,E,,0.9392,1283,1.736
+FX9013,immune,combined_pill,COCP - Gederal,Hormones,E,,1.187,532,0.9187
+FX9014,immune,progestin_only,Mirena coil,Hormones,E,,0.8087,203,0.7762
+FX9016,immune,natural,,Unknown,C,,0.3684,265,0.5729
+FX9018,immune,progestin_only,Implant,Hormones,C,,0.9082,336,0.7698
+FX9020,immune,natural,,Proliferative,E,0,0.358,462,0.5889
+FX9021,immune,progestin_only,POP - Desogestrel,Hormones,C,,1.686,427,1.923
+FX9022,immune,natural,,Secretory Mid,E,2,2.277,543,1.849
+FX9024,immune,natural,,Proliferative,C,0,0.03074,333,0.4496
+FX9027,immune,natural,,Proliferative,P,0,0.3315,276,0.4959

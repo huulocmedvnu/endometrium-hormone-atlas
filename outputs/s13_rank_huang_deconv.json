@@ -1,0 +1,82 @@
+{
+ "r12_huang_rank": {
+  "genes": 14781,
+  "heca_lodo_rho": {
+   "stroma": 0.796,
+   "epithelium": 0.796
+  },
+  "ec0": {
+   "stroma": {
+    "natural_median": 1.851,
+    "passed": true
+   },
+   "epithelium": {
+    "natural_median": 2.16,
+    "passed": true
+   }
+  },
+  "medians": {
+   "natural": {
+    "stroma": 1.851,
+    "epithelium": 2.16,
+    "index": -0.268,
+    "residual": 0.318,
+    "woi": 0.963
+   },
+   "programmed": {
+    "stroma": 1.561,
+    "epithelium": 1.584,
+    "index": -0.027,
+    "residual": 0.066,
+    "woi": 0.775
+   }
+  },
+  "n": {
+   "natural": 7,
+   "programmed": 7
+  },
+  "p_e1_index": 0.000291,
+  "p_e2_woi": 8.74e-05,
+  "p_e3_residual": 0.000291,
+  "p_stroma_two_sided": 0.0111,
+  "p_epithelium_two_sided": 0.0311
+ },
+ "r13_deconvolution": {
+  "markers": 250,
+  "heca_check_rho": {
+   "stroma": 0.931,
+   "epithelium": 0.956,
+   "immune": 0.952
+  },
+  "gse137765": {
+   "epithelium_fraction": {
+    "COC": 0.18,
+    "LNG-IUD": 0.0,
+    "control": 0.329,
+    "cu-IUD": 0.253
+   },
+   "p_epithelium_fraction_lng_vs_control": 2.02e-05,
+   "residual_adjusted_hormonal": {
+    "coef": -0.131,
+    "ci": [
+     -0.366,
+     0.105
+    ],
+    "p": 0.277
+   },
+   "residual_adjusted_LNG-IUS": {
+    "coef": -0.649,
+    "ci": [
+     -0.912,
+     -0.387
+    ],
+    "p": 1.22e-06
+   }
+  },
+  "natural_arrays_epithelium_fraction_by_phase": {
+   "0": 0.171,
+   "1": 0.479,
+   "2": 0.289
+  }
+ }
+}

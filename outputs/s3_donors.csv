@@ -1,0 +1,151 @@
+donor,case,rasrm,age,y,Stage,set,compartment,clock,residual
+EX0045,True,1,31,0,Proliferative,nuclei,stroma,0.005224,0.005224
+EX0288,True,4,40,0,Proliferative,nuclei,stroma,0.04331,0.04331
+EX0366,True,3,40,2,Secretory Mid,nuclei,stroma,1.794,-0.2059
+EX0540,True,1,43,0,Proliferative,nuclei,stroma,-0.01941,-0.01941
+EX0661,True,3,25,2,Secretory Mid,nuclei,stroma,1.865,-0.1353
+EX0789,True,2,37,2,Secretory Mid,nuclei,stroma,1.39,-0.6104
+EX0795,True,1,18,0,Proliferative,nuclei,stroma,0.06339,0.06339
+FX0011,False,0,27,0,Proliferative,nuclei,stroma,-0.1024,-0.1024
+FX0052,False,0,46,0,Proliferative Disordered,nuclei,stroma,0.1633,0.1633
+FX0060,True,3,29,0,Proliferative,nuclei,stroma,0.172,0.172
+FX1087,True,1,26,2,Secretory Mid,nuclei,stroma,1.669,-0.3309
+FX1097,True,2,41,0,Proliferative,nuclei,stroma,-0.07192,-0.07192
+FX1100,True,1,28,2,Secretory Mid,nuclei,stroma,1.527,-0.4726
+FX1101,True,4,36,0,Proliferative,nuclei,stroma,0.3006,0.3006
+FX1104,False,0,38,0,Proliferative Late,nuclei,stroma,0.06459,0.06459
+FX1106,False,0,32,2,Secretory Mid,nuclei,stroma,0.6147,-1.385
+FX1119,False,0,30,0,Proliferative,nuclei,stroma,0.1622,0.1622
+FX1125,True,3,23,0,Proliferative,nuclei,stroma,0.2862,0.2862
+FX1129,True,3,31,0,Proliferative,nuclei,stroma,0.6262,0.6262
+FX1130,True,3,32,1,Secretory Early,nuclei,stroma,0.4494,-0.5506
+FX1136,True,3,38,0,Proliferative,nuclei,stroma,0.4243,0.4243
+FX1141,False,0,34,0,Proliferative Menstrual,nuclei,stroma,0.9349,0.9349
+FX1146,False,0,37,0,Proliferative,nuclei,stroma,0.1104,0.1104
+FX1150,True,1,24,0,Proliferative,nuclei,stroma,0.4422,0.4422
+FX1156,True,4,38,2,Secretory Mid,nuclei,stroma,1.74,-0.2597
+FX1160,True,3,24,0,Proliferative,nuclei,stroma,0.2275,0.2275
+FX1215,True,3,30,0,Proliferative,nuclei,stroma,-0.09755,-0.09755
+FX1223,True,1,22,1,Secretory Early,nuclei,stroma,1.085,0.08453
+FX1236,True,2,35,0,Proliferative,nuclei,stroma,-0.07723,-0.07723
+FX9005,True,3,34,0,Proliferative,nuclei,stroma,-0.09289,-0.09289
+FX9006,True,2,33,1,Secretory Early,nuclei,stroma,0.5399,-0.4601
+FX9011,False,0,18,2,Secretory Mid,nuclei,stroma,0.327,-1.673
+FX9020,True,1,31,0,Proliferative,nuclei,stroma,0.3395,0.3395
+FX9022,True,2,36,2,Secretory Mid,nuclei,stroma,1.846,-0.1544
+FX9024,False,0,40,0,Proliferative,nuclei,stroma,-0.03799,-0.03799
+FX9027,False,0,42,0,Proliferative,nuclei,stroma,-0.02757,-0.02757
+EX0045,True,1,31,0,Proliferative,nuclei,epithelium,0.09029,0.09029
+EX0288,True,4,40,0,Proliferative,nuclei,epithelium,0.1911,0.1911
+EX0366,True,3,40,2,Secretory Mid,nuclei,epithelium,1.094,-0.9064
+EX0540,True,1,43,0,Proliferative,nuclei,epithelium,0.006861,0.006861
+EX0661,True,3,25,2,Secretory Mid,nuclei,epithelium,1.484,-0.5165
+EX0789,True,2,37,2,Secretory Mid,nuclei,epithelium,1.273,-0.7267
+EX0795,True,1,18,0,Proliferative,nuclei,epithelium,0.1412,0.1412
+FX0011,False,0,27,0,Proliferative,nuclei,epithelium,-0.2377,-0.2377
+FX0052,False,0,46,0,Proliferative Disordered,nuclei,epithelium,0.4666,0.4666
+FX0060,True,3,29,0,Proliferative,nuclei,epithelium,0.2673,0.2673
+FX1087,True,1,26,2,Secretory Mid,nuclei,epithelium,1.14,-0.8595
+FX1097,True,2,41,0,Proliferative,nuclei,epithelium,0.09819,0.09819
+FX1100,True,1,28,2,Secretory Mid,nuclei,epithelium,1.276,-0.724
+FX1101,True,4,36,0,Proliferative,nuclei,epithelium,0.2,0.2
+FX1104,False,0,38,0,Proliferative Late,nuclei,epithelium,0.1359,0.1359
+FX1106,False,0,32,2,Secretory Mid,nuclei,epithelium,0.2612,-1.739
+FX1119,False,0,30,0,Proliferative,nuclei,epithelium,0.3775,0.3775
+FX1125,True,3,23,0,Proliferative,nuclei,epithelium,0.2071,0.2071
+FX1129,True,3,31,0,Proliferative,nuclei,epithelium,0.5197,0.5197
+FX1130,True,3,32,1,Secretory Early,nuclei,epithelium,0.448,-0.552
+FX1136,True,3,38,0,Proliferative,nuclei,epithelium,0.5021,0.5021
+FX1141,False,0,34,0,Proliferative Menstrual,nuclei,epithelium,1.789,1.789
+FX1146,False,0,37,0,Proliferative,nuclei,epithelium,0.04799,0.04799
+FX1150,True,1,24,0,Proliferative,nuclei,epithelium,0.4561,0.4561
+FX1156,True,4,38,2,Secretory Mid,nuclei,epithelium,1.184,-0.8165
+FX1160,True,3,24,0,Proliferative,nuclei,epithelium,0.1856,0.1856
+FX1215,True,3,30,0,Proliferative,nuclei,epithelium,0.5433,0.5433
+FX1223,True,1,22,1,Secretory Early,nuclei,epithelium,0.6956,-0.3044
+FX1236,True,2,35,0,Proliferative,nuclei,epithelium,0.1704,0.1704
+FX9005,True,3,34,0,Proliferative,nuclei,epithelium,0.07547,0.07547
+FX9006,True,2,33,1,Secretory Early,nuclei,epithelium,0.3632,-0.6368
+FX9011,False,0,18,2,Secretory Mid,nuclei,epithelium,0.3173,-1.683
+FX9020,True,1,31,0,Proliferative,nuclei,epithelium,0.2214,0.2214
+FX9022,True,2,36,2,Secretory Mid,nuclei,epithelium,1.272,-0.7285
+FX9024,False,0,40,0,Proliferative,nuclei,epithelium,0.05272,0.05272
+FX9027,False,0,42,0,Proliferative,nuclei,epithelium,0.1573,0.1573
+A13,False,0,35,0,Proliferative,cells,stroma,0.6051,0.6051
+A30,False,0,23,1.5,Secretory Early-Mid,cells,stroma,0.9295,-0.5705
+A70,False,0,37,0,Proliferative,cells,stroma,0.9236,0.9236
+C03,False,0,42,0,Proliferative,cells,stroma,0.3025,0.3025
+E1,False,0,29,2,Secretory Mid,cells,stroma,1.438,-0.562
+E2,False,0,26,1.5,Secretory Early-Mid,cells,stroma,1.435,-0.06454
+E3,False,0,26,0,Proliferative,cells,stroma,0.3145,0.3145
+ES345,False,0,40,1,Secretory Early,cells,stroma,1.332,0.3319
+FX1119,False,0,30,0,Proliferative,cells,stroma,0.0372,0.0372
+FX1125,True,3,23,0,Proliferative,cells,stroma,-0.1023,-0.1023
+FX1146,False,0,37,0,Proliferative,cells,stroma,-0.1434,-0.1434
+FX1156,True,4,38,2,Secretory Mid,cells,stroma,1.527,-0.4732
+FX1176,True,4,31,0,Proliferative Disordered,cells,stroma,-0.1986,-0.1986
+FX1259,True,2,37,0,Proliferative Late,cells,stroma,0.0118,0.0118
+FX1289,True,1,24,0,Proliferative Late,cells,stroma,-0.1695,-0.1695
+FX9006,True,2,33,1,Secretory Early,cells,stroma,0.7167,-0.2833
+Fonseca_10,True,4,40,0,Proliferative,cells,stroma,1.147,1.147
+Fonseca_17,True,4,34,0,Proliferative,cells,stroma,0.8607,0.8607
+GSM5572238,False,0,,1.5,Secretory Early-Mid,cells,stroma,0.9117,-0.5883
+GSM5572239,False,0,,0,Proliferative,cells,stroma,0.2002,0.2002
+GSM5572240,False,0,,1.5,Secretory Early-Mid,cells,stroma,1.827,0.3265
+GSM6605431,True,2,26,1,Secretory Early,cells,stroma,0.9813,-0.01872
+GSM6605432,True,1,30,0,Proliferative Early,cells,stroma,-0.04212,-0.04212
+GSM6605433,True,1,24,0,Proliferative Early,cells,stroma,0.03027,0.03027
+GSM6605434,True,1,28,0,Proliferative,cells,stroma,0.1379,0.1379
+GSM6605435,True,1,29,2,Secretory Mid,cells,stroma,1.161,-0.8391
+GSM6605436,True,1,33,2,Secretory Mid,cells,stroma,1.321,-0.6792
+GSM6605437,False,0,29,2,Secretory Mid,cells,stroma,1.416,-0.5835
+GSM6605438,False,0,32,0,Proliferative,cells,stroma,0.3326,0.3326
+GSM6605439,False,0,33,0,Proliferative Early,cells,stroma,0.03077,0.03077
+GSM6605440,False,0,24,0,Proliferative Early,cells,stroma,-0.189,-0.189
+SAMN15049042,False,0,,0,Proliferative,cells,stroma,-0.3327,-0.3327
+SAMN15049043,False,0,,1,Secretory Early,cells,stroma,0.7774,-0.2226
+SAMN15049044,False,0,,1,Secretory Early,cells,stroma,1.39,0.3901
+SAMN15049046,False,0,,1.5,Secretory Early-Mid,cells,stroma,1.251,-0.2489
+SAMN15049047,False,0,,1.5,Secretory Early-Mid,cells,stroma,1.55,0.04979
+SAMN15049048,False,0,,1.5,Secretory Early-Mid,cells,stroma,1.59,0.09011
+SAMN15049049,False,0,,2,Secretory Mid,cells,stroma,1.601,-0.3994
+SAMN15049050,False,0,,0,Proliferative,cells,stroma,0.3691,0.3691
+SAMN15049051,False,0,,1,Secretory Early,cells,stroma,1.357,0.3572
+SE03,False,0,26,0,Proliferative,cells,stroma,0.1619,0.1619
+A13,False,0,35,0,Proliferative,cells,epithelium,0.174,0.174
+A30,False,0,23,1.5,Secretory Early-Mid,cells,epithelium,1.652,0.1517
+A70,False,0,37,0,Proliferative,cells,epithelium,0.4188,0.4188
+C03,False,0,42,0,Proliferative,cells,epithelium,0.0407,0.0407
+E1,False,0,29,2,Secretory Mid,cells,epithelium,1.684,-0.3156
+E2,False,0,26,1.5,Secretory Early-Mid,cells,epithelium,1.349,-0.1509
+E3,False,0,26,0,Proliferative,cells,epithelium,-0.01604,-0.01604
+ES345,False,0,40,1,Secretory Early,cells,epithelium,1.232,0.2319
+FX1119,False,0,30,0,Proliferative,cells,epithelium,-0.08656,-0.08656
+FX1146,False,0,37,0,Proliferative,cells,epithelium,-0.02869,-0.02869
+FX1156,True,4,38,2,Secretory Mid,cells,epithelium,1.653,-0.3471
+FX1176,True,4,31,0,Proliferative Disordered,cells,epithelium,-0.03021,-0.03021
+FX1259,True,2,37,0,Proliferative Late,cells,epithelium,-0.08308,-0.08308
+FX9006,True,2,33,1,Secretory Early,cells,epithelium,0.612,-0.388
+Fonseca_16,True,2,21,0,Proliferative,cells,epithelium,0.134,0.134
+Fonseca_17,True,4,34,0,Proliferative,cells,epithelium,0.1244,0.1244
+GSM6605431,True,2,26,1,Secretory Early,cells,epithelium,0.8014,-0.1986
+GSM6605432,True,1,30,0,Proliferative Early,cells,epithelium,-0.01707,-0.01707
+GSM6605433,True,1,24,0,Proliferative Early,cells,epithelium,-0.007724,-0.007724
+GSM6605434,True,1,28,0,Proliferative,cells,epithelium,-0.01405,-0.01405
+GSM6605435,True,1,29,2,Secretory Mid,cells,epithelium,0.7154,-1.285
+GSM6605436,True,1,33,2,Secretory Mid,cells,epithelium,1.214,-0.7862
+GSM6605437,False,0,29,2,Secretory Mid,cells,epithelium,2.108,0.1079
+GSM6605438,False,0,32,0,Proliferative,cells,epithelium,0.2195,0.2195
+GSM6605439,False,0,33,0,Proliferative Early,cells,epithelium,0.03917,0.03917
+GSM6605440,False,0,24,0,Proliferative Early,cells,epithelium,-0.08178,-0.08178
+SAMN15049042,False,0,,0,Proliferative,cells,epithelium,0.118,0.118
+SAMN15049043,False,0,,1,Secretory Early,cells,epithelium,0.8418,-0.1582
+SAMN15049044,False,0,,1,Secretory Early,cells,epithelium,0.7675,-0.2325
+SAMN15049046,False,0,,1.5,Secretory Early-Mid,cells,epithelium,1.199,-0.3006
+SAMN15049047,False,0,,1.5,Secretory Early-Mid,cells,epithelium,1.548,0.0483
+SAMN15049048,False,0,,1.5,Secretory Early-Mid,cells,epithelium,1.645,0.1445
+SAMN15049049,False,0,,2,Secretory Mid,cells,epithelium,1.793,-0.2066
+SAMN15049050,False,0,,0,Proliferative,cells,epithelium,0.2041,0.2041
+SAMN15049051,False,0,,1,Secretory Early,cells,epithelium,1.01,0.00967
+SE02,False,0,38,0,Proliferative Early,cells,epithelium,0.2535,0.2535
+SE03,False,0,26,0,Proliferative,cells,epithelium,-0.0377,-0.0377

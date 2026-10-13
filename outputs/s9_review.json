@@ -1,0 +1,339 @@
+{
+ "nuclei": {
+  "r1_all_compartments": {
+   "stroma": {
+    "n_treated": 8,
+    "n_natural": 48,
+    "residual_treated": 0.229,
+    "residual_natural": 0.014,
+    "p_two_sided": 0.00984
+   },
+   "epithelium": {
+    "n_treated": 8,
+    "n_natural": 48,
+    "residual_treated": -0.177,
+    "residual_natural": -0.018,
+    "p_two_sided": 0.0388
+   },
+   "immune": {
+    "n_treated": 8,
+    "n_natural": 48,
+    "residual_treated": -0.023,
+    "residual_natural": -0.027,
+    "p_two_sided": 0.918
+   },
+   "endothelium": {
+    "n_treated": 3,
+    "n_natural": 17,
+    "residual_treated": 0.248,
+    "residual_natural": -0.02,
+    "p_two_sided": 0.118
+   }
+  },
+  "r2_staged_only": {
+   "n_natural_staged": 36,
+   "residual_treated": -0.284,
+   "residual_natural": -0.005,
+   "p": 0.00239
+  },
+  "r3_ood": {
+   "stroma": {
+    "natural_median": 2.77,
+    "treated_median": 3.1,
+    "natural_q95": 4.66,
+    "treated_above_q95": "0/8"
+   },
+   "epithelium": {
+    "natural_median": 2.81,
+    "treated_median": 2.66,
+    "natural_q95": 4.38,
+    "treated_above_q95": "0/10"
+   }
+  },
+  "r4_joint": {
+   "treatment_endometriosis": {
+    "n": 56,
+    "treated_coef": -0.253,
+    "ci": [
+     -0.519,
+     0.013
+    ],
+    "p": 0.0622,
+    "endometriosis_coef": -0.001,
+    "endometriosis_p": 0.991
+   },
+   "plus_age_nuclei": {
+    "n": 56,
+    "treated_coef": -0.253,
+    "ci": [
+     -0.539,
+     0.033
+    ],
+    "p": 0.0833,
+    "endometriosis_coef": 0.021,
+    "endometriosis_p": 0.837
+   }
+  },
+  "r5_cross_dataset": {
+   "woi_genes_from_other_set": {
+    "genes": 50,
+    "treated": 0.695,
+    "natural_mid": 1.229,
+    "p": 0.00398
+   },
+   "donor_level_fraction": {
+    "n": 8,
+    "stroma_median": 0.24,
+    "epithelium_median": 0.177,
+    "p_paired_stroma_greater": 0.422,
+    "donors_epithelium_lower": "3/8"
+   }
+  },
+  "r6_ambient": {
+   "EPCAM_in_stroma": {
+    "treated": 0.213,
+    "natural": 0.241,
+    "p_two_sided": 0.573
+   },
+   "KRT8_in_stroma": {
+    "treated": 0.053,
+    "natural": 0.105,
+    "p_two_sided": 0.000426
+   },
+   "KRT18_in_stroma": {
+    "treated": 0.1,
+    "natural": 0.181,
+    "p_two_sided": 0.0154
+   },
+   "PDGFRB_in_epithelium": {
+    "treated": 0.142,
+    "natural": 0.095,
+    "p_two_sided": 0.525
+   },
+   "DCN_in_epithelium": {
+    "treated": 0.519,
+    "natural": 0.38,
+    "p_two_sided": 0.449
+   },
+   "COL1A2_in_epithelium": {
+    "treated": 0.589,
+    "natural": 1.449,
+    "p_two_sided": 0.00157
+   }
+  }
+ },
+ "cells_combined_pill": {
+  "r1_all_compartments": {
+   "stroma": {
+    "n_treated": 9,
+    "n_natural": 35,
+    "residual_treated": 0.259,
+    "residual_natural": -0.036,
+    "p_two_sided": 0.00152
+   },
+   "epithelium": {
+    "n_treated": 9,
+    "n_natural": 35,
+    "residual_treated": 0.13,
+    "residual_natural": -0.024,
+    "p_two_sided": 0.337
+   },
+   "immune": {
+    "n_treated": 9,
+    "n_natural": 35,
+    "residual_treated": -0.366,
+    "residual_natural": 0.07,
+    "p_two_sided": 0.00435
+   },
+   "endothelium": {
+    "n_treated": 7,
+    "n_natural": 29,
+    "residual_treated": -0.222,
+    "residual_natural": -0.1,
+    "p_two_sided": 0.192
+   }
+  },
+  "r2_staged_only": {
+   "n_natural_staged": 30,
+   "residual_treated": -0.188,
+   "residual_natural": 0.002,
+   "p": 0.0373
+  },
+  "r3_ood": {
+   "stroma": {
+    "natural_median": 2.59,
+    "treated_median": 2.28,
+    "natural_q95": 5.15,
+    "treated_above_q95": "0/9"
+   },
+   "epithelium": {
+    "natural_median": 2.97,
+    "treated_median": 2.93,
+    "natural_q95": 3.88,
+    "treated_above_q95": "0/10"
+   }
+  },
+  "r4_joint": {
+   "treatment_endometriosis": {
+    "n": 49,
+    "treated_coef": -0.217,
+    "ci": [
+     -0.42,
+     -0.013
+    ],
+    "p": 0.0372,
+    "endometriosis_coef": -0.047,
+    "endometriosis_p": 0.606
+   },
+   "plus_age_nuclei": {
+    "n": 39,
+    "treated_coef": -0.189,
+    "ci": [
+     -0.44,
+     0.061
+    ],
+    "p": 0.139,
+    "endometriosis_coef": -0.051,
+    "endometriosis_p": 0.616
+   },
+   "plus_study": {
+    "n": 39,
+    "treated_coef": -0.384,
+    "ci": [
+     -0.699,
+     -0.069
+    ],
+    "p": 0.0169,
+    "endometriosis_coef": -0.048,
+    "endometriosis_p": 0.638
+   }
+  },
+  "r5_cross_dataset": {
+   "woi_genes_from_other_set": {
+    "genes": 50,
+    "treated": 0.521,
+    "natural_mid": 1.093,
+    "p": 0.021
+   },
+   "donor_level_fraction": {
+    "n": 9,
+    "stroma_median": 0.712,
+    "epithelium_median": 0.202,
+    "p_paired_stroma_greater": 0.00195,
+    "donors_epithelium_lower": "9/9"
+   }
+  },
+  "r6_ambient": {
+   "EPCAM_in_stroma": {
+    "treated": 0.064,
+    "natural": 0.076,
+    "p_two_sided": 0.369
+   },
+   "KRT8_in_stroma": {
+    "treated": 0.042,
+    "natural": 0.054,
+    "p_two_sided": 0.532
+   },
+   "KRT18_in_stroma": {
+    "treated": 0.054,
+    "natural": 0.091,
+    "p_two_sided": 0.176
+   },
+   "PDGFRB_in_epithelium": {
+    "treated": 0.006,
+    "natural": 0.013,
+    "p_two_sided": 0.0616
+   },
+   "DCN_in_epithelium": {
+    "treated": 0.031,
+    "natural": 0.043,
+    "p_two_sided": 0.198
+   },
+   "COL1A2_in_epithelium": {
+    "treated": 0.95,
+    "natural": 0.95,
+    "p_two_sided": 0.825
+   }
+  }
+ },
+ "huang_r2_lodo_line": {
+  "p_e3_lodo_line": 0.00554,
+  "residual_programmed": -0.376,
+  "residual_natural": 0.373
+ },
+ "bulk_r7": {
+  "GSE60129": {
+   "epi_content_p_two_sided": 0.00833,
+   "epi_content_treated": -0.687,
+   "epi_content_control": 0.429,
+   "dyssynchrony_adjusted": {
+    "treated_coef": 0.331,
+    "ci": [
+     0.076,
+     0.585
+    ],
+    "p": 0.0109
+   },
+   "epithelium_adjusted": {
+    "treated_coef": -0.584,
+    "ci": [
+     -1.012,
+     -0.155
+    ],
+    "p": 0.00755
+   }
+  },
+  "GSE137765": {
+   "epi_content_p_two_sided": 0.000204,
+   "epi_content_treated": -0.481,
+   "epi_content_control": 0.394,
+   "dyssynchrony_adjusted": {
+    "treated_coef": 0.138,
+    "ci": [
+     -0.123,
+     0.399
+    ],
+    "p": 0.3
+   },
+   "epithelium_adjusted": {
+    "treated_coef": -0.292,
+    "ci": [
+     -0.644,
+     0.06
+    ],
+    "p": 0.104
+   }
+  },
+  "shared_controls_check": {
+   "max_cross_correlation": 0.729,
+   "median_within_max": 0.448,
+   "pairs_above_0_9": 0
+  }
+ },
+ "r8_holm": {
+  "delay": [
+   0.0159,
+   0.031,
+   0.191,
+   0.00275,
+   0.00217
+  ],
+  "woi": [
+   0.00576,
+   0.00576,
+   0.00306,
+   0.0559,
+   0.00576
+  ]
+ },
+ "h1_subtests": {
+  "nuclei": {
+   "p_stroma_above_1": 0.0742,
+   "p_epithelium_below_1": 0.578
+  },
+  "cells_combined_pill": {
+   "p_stroma_above_1": 0.715,
+   "p_epithelium_below_1": 0.00391
+  }
+ }
+}

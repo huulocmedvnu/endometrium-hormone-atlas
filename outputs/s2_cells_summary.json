@@ -1,0 +1,114 @@
+{
+ "set": "cells",
+ "treated_group": "progestin_only",
+ "pc1": {
+  "stroma": {
+   "donors_train": 34,
+   "rho": 0.824,
+   "p": 2.14e-09,
+   "passed": true
+  },
+  "epithelium": {
+   "donors_train": 32,
+   "rho": 0.852,
+   "p": 6.2e-10,
+   "passed": true
+  },
+  "endothelium": {
+   "donors_train": 27,
+   "rho": 0.625,
+   "p": 0.000496,
+   "passed": true
+  },
+  "immune": {
+   "donors_train": 32,
+   "rho": 0.812,
+   "p": 1.74e-08,
+   "passed": true
+  }
+ },
+ "groups": {
+  "natural": 49,
+  "combined_pill": 10,
+  "progestin_only": 2,
+  "other_Wiley": 1,
+  "other_Progesterone": 1
+ },
+ "pc2": {
+  "PRL": {
+   "treated_median": 0.565,
+   "natural_prolif_median": 0.006,
+   "p": 0.0123
+  },
+  "passed": true
+ },
+ "h1": {
+  "n_treated": 2,
+  "n_natural": 40,
+  "stroma_median_treated": 0.556,
+  "epithelium_median_treated": 0.873,
+  "dyssynchrony_median_treated": -0.317,
+  "dyssynchrony_median_natural": 0.015,
+  "p_dyssynchrony_higher": 0.847,
+  "p_stroma_above_1": 0.75,
+  "p_epithelium_below_1": 0.5
+ },
+ "h2": {
+  "genes": [
+   "PAEP",
+   "CXCL14",
+   "MT1G",
+   "TM4SF1",
+   "RIMKLB",
+   "MT1E",
+   "MT2A",
+   "SOD2",
+   "GPX3",
+   "SLPI",
+   "S100A10",
+   "CD55",
+   "DEFB1",
+   "MGST1",
+   "CLDN4",
+   "NUPR1",
+   "MT1M",
+   "CRYAB",
+   "IL6ST",
+   "ANXA2",
+   "MAOA",
+   "GADD45A",
+   "MT1F",
+   "LINC01320",
+   "IDO1",
+   "MT1H",
+   "C2CD4B",
+   "MALAT1",
+   "C2CD4A",
+   "NEAT1",
+   "KRT7",
+   "MT1X",
+   "KLF6",
+   "TCIM",
+   "IER3",
+   "ANXA4",
+   "LDHA",
+   "ACSL5",
+   "ARID5B",
+   "IGFBP7",
+   "SYNE2",
+   "CP",
+   "FAM177A1",
+   "FTH1",
+   "SCGB2A1",
+   "SPP1",
+   "DYNLT3",
+   "SGK1",
+   "RASD1",
+   "LGALS3"
+  ],
+  "treated_median": 1.593,
+  "natural_mid_median": 2.163,
+  "natural_prolif_median": 0.877,
+  "p_treated_lower_than_mid": 0.214
+ }
+}

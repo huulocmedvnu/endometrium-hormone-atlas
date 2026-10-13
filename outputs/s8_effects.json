@@ -1,0 +1,189 @@
+{
+ "HECA snRNA-seq|position-matched epithelial residual": {
+  "shift": -0.253,
+  "ci": [
+   -0.486,
+   -0.055
+  ],
+  "n": [
+   8,
+   48
+  ]
+ },
+ "HECA snRNA-seq|dyssynchrony": {
+  "shift": 0.373,
+  "ci": [
+   0.172,
+   0.589
+  ],
+  "n": [
+   8,
+   48
+  ]
+ },
+ "HECA snRNA-seq|epithelial WOI score": {
+  "shift": -0.987,
+  "ci": [
+   -1.251,
+   -0.284
+  ],
+  "n": [
+   10,
+   9
+  ]
+ },
+ "HECA scRNA-seq|position-matched epithelial residual": {
+  "shift": -0.216,
+  "ci": [
+   -0.406,
+   -0.036
+  ],
+  "n": [
+   9,
+   40
+  ]
+ },
+ "HECA scRNA-seq|dyssynchrony": {
+  "shift": 0.215,
+  "ci": [
+   0.038,
+   0.393
+  ],
+  "n": [
+   9,
+   40
+  ]
+ },
+ "HECA scRNA-seq|epithelial WOI score": {
+  "shift": -0.99,
+  "ci": [
+   -1.312,
+   -0.418
+  ],
+  "n": [
+   10,
+   6
+  ]
+ },
+ "Huang 2026|dyssynchrony (unscaled)": {
+  "shift": 0.066,
+  "ci": [
+   -0.184,
+   0.21
+  ],
+  "n": [
+   7,
+   7
+  ]
+ },
+ "Huang 2026|dyssynchrony (zscored)": {
+  "shift": 0.292,
+  "ci": [
+   0.114,
+   0.546
+  ],
+  "n": [
+   7,
+   7
+  ]
+ },
+ "Huang 2026|epithelial WOI score": {
+  "shift": -1.256,
+  "ci": [
+   -1.421,
+   -0.357
+  ],
+  "n": [
+   7,
+   9
+  ]
+ },
+ "GSE60129|dyssynchrony": {
+  "shift": 0.431,
+  "ci": [
+   0.212,
+   0.671
+  ],
+  "n": [
+   21,
+   12
+  ]
+ },
+ "GSE60129|epithelium clock": {
+  "shift": -0.65,
+  "ci": [
+   -1.042,
+   -0.258
+  ],
+  "n": [
+   21,
+   12
+  ]
+ },
+ "GSE60129|stroma clock": {
+  "shift": -0.179,
+  "ci": [
+   -0.427,
+   0.113
+  ],
+  "n": [
+   21,
+   12
+  ]
+ },
+ "GSE60129|epithelial WOI score": {
+  "shift": -0.732,
+  "ci": [
+   -1.334,
+   0.221
+  ],
+  "n": [
+   21,
+   12
+  ]
+ },
+ "GSE137765|dyssynchrony": {
+  "shift": 0.285,
+  "ci": [
+   0.143,
+   0.465
+  ],
+  "n": [
+   23,
+   24
+  ]
+ },
+ "GSE137765|epithelium clock": {
+  "shift": -0.395,
+  "ci": [
+   -0.597,
+   -0.115
+  ],
+  "n": [
+   23,
+   24
+  ]
+ },
+ "GSE137765|stroma clock": {
+  "shift": -0.12,
+  "ci": [
+   -0.325,
+   0.153
+  ],
+  "n": [
+   23,
+   24
+  ]
+ },
+ "GSE137765|epithelial WOI score": {
+  "shift": -0.624,
+  "ci": [
+   -0.997,
+   -0.242
+  ],
+  "n": [
+   23,
+   24
+  ]
+ }
+}

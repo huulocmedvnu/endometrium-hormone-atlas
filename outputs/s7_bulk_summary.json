@@ -1,0 +1,113 @@
+{
+ "GSE97929_transfer": {
+  "stroma": {
+   "n_lh2": 14,
+   "n_lh8": 16,
+   "median_lh2": 0.332,
+   "median_lh8": 0.869,
+   "p_lh8_higher": 2.18e-06
+  },
+  "epithelium": {
+   "n_lh2": 11,
+   "n_lh8": 17,
+   "median_lh2": 0.252,
+   "median_lh8": 0.785,
+   "p_lh8_higher": 6.08e-06
+  }
+ },
+ "bulk_clock_lodo_rho": {
+  "stroma": 0.821,
+  "epithelium": 0.753
+ },
+ "GSE60129": {
+  "n": {
+   "LNG-IUS": 13,
+   "control": 12,
+   "DMPA": 8
+  },
+  "woi_genes": 39,
+  "medians": {
+   "DMPA": {
+    "stroma": 0.376,
+    "epithelium": 0.314,
+    "dyssynchrony": -0.07,
+    "woi": -0.326
+   },
+   "LNG-IUS": {
+    "stroma": 0.672,
+    "epithelium": 0.34,
+    "dyssynchrony": 0.332,
+    "woi": -0.291
+   },
+   "control": {
+    "stroma": 0.882,
+    "epithelium": 1.056,
+    "dyssynchrony": -0.309,
+    "woi": 0.687
+   }
+  },
+  "p_dyssynchrony_higher": 0.000688,
+  "p_woi_lower": 0.0559,
+  "p_stroma_two_sided": 0.16,
+  "p_epithelium_two_sided": 0.00373,
+  "per_drug": {
+   "LNG-IUS": {
+    "p_dyssynchrony_higher": 0.000337,
+    "p_woi_lower": 0.101
+   },
+   "DMPA": {
+    "p_dyssynchrony_higher": 0.0412,
+    "p_woi_lower": 0.0784
+   }
+  }
+ },
+ "GSE137765": {
+  "n": {
+   "Cu-IUD": 13,
+   "COC": 12,
+   "LNG-IUS": 11,
+   "control": 11
+  },
+  "woi_genes": 39,
+  "medians": {
+   "COC": {
+    "stroma": 0.59,
+    "epithelium": 0.567,
+    "dyssynchrony": -0.035,
+    "woi": -0.209
+   },
+   "Cu-IUD": {
+    "stroma": 0.89,
+    "epithelium": 0.9,
+    "dyssynchrony": -0.073,
+    "woi": 0.136
+   },
+   "LNG-IUS": {
+    "stroma": 0.618,
+    "epithelium": 0.202,
+    "dyssynchrony": 0.416,
+    "woi": -0.446
+   },
+   "control": {
+    "stroma": 0.479,
+    "epithelium": 0.75,
+    "dyssynchrony": -0.25,
+    "woi": 0.618
+   }
+  },
+  "p_dyssynchrony_higher": 0.000433,
+  "p_woi_lower": 0.0021,
+  "p_stroma_two_sided": 0.273,
+  "p_epithelium_two_sided": 0.0117,
+  "per_drug": {
+   "LNG-IUS": {
+    "p_dyssynchrony_higher": 9.27e-06,
+    "p_woi_lower": 0.00119
+   },
+   "COC": {
+    "p_dyssynchrony_higher": 0.117,
+    "p_woi_lower": 0.0518
+   }
+  }
+ }
+}

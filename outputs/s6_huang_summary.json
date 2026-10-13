@@ -1,0 +1,89 @@
+{
+ "shared_genes": 14781,
+ "woi_genes_present": 38,
+ "donors": {
+  "Natural": 9,
+  "Controlled": 7
+ },
+ "nuclei_per_compartment": {
+  "endothelium": 840,
+  "epithelium": 36762,
+  "immune": 8878,
+  "stroma": 46354
+ },
+ "unscaled": {
+  "ec0": {
+   "stroma": {
+    "natural_median": 1.28,
+    "passed": true
+   },
+   "epithelium": {
+    "natural_median": 2.263,
+    "passed": true
+   }
+  },
+  "medians": {
+   "natural": {
+    "stroma": 1.28,
+    "epithelium": 2.263,
+    "dyssynchrony": -0.983,
+    "woi": 1.944,
+    "residual": 1.056
+   },
+   "programmed": {
+    "stroma": 0.919,
+    "epithelium": 1.878,
+    "dyssynchrony": -0.917,
+    "woi": 0.629,
+    "residual": 0.948
+   }
+  },
+  "n": {
+   "natural": 7,
+   "programmed": 7
+  },
+  "p_e1_dyssynchrony_higher": 0.191,
+  "p_e2_woi_lower": 0.000612,
+  "p_e3_residual_lower": 0.228,
+  "p_stroma_two_sided": 0.0262,
+  "p_epithelium_two_sided": 0.0229
+ },
+ "zscored": {
+  "ec0": {
+   "stroma": {
+    "natural_median": 0.592,
+    "passed": false
+   },
+   "epithelium": {
+    "natural_median": 1.005,
+    "passed": true
+   }
+  },
+  "medians": {
+   "natural": {
+    "stroma": 0.592,
+    "epithelium": 1.005,
+    "dyssynchrony": -0.123,
+    "woi": 1.944,
+    "residual": 0.123
+   },
+   "programmed": {
+    "stroma": 0.656,
+    "epithelium": 0.234,
+    "dyssynchrony": 0.12,
+    "woi": 0.629,
+    "residual": -0.12
+   }
+  },
+  "n": {
+   "natural": 7,
+   "programmed": 7
+  },
+  "p_e1_dyssynchrony_higher": 0.00554,
+  "p_e2_woi_lower": 0.000612,
+  "p_e3_residual_lower": 0.00554,
+  "p_stroma_two_sided": 0.318,
+  "p_epithelium_two_sided": 0.0549
+ },
+ "primary": "unscaled"
+}

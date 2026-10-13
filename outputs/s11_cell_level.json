@@ -1,0 +1,25 @@
+{
+ "genes": 4145,
+ "nuclei_per_profile": 50,
+ "draws": 20,
+ "downsampled": {
+  "n_treated": 8,
+  "median_p_h1": 0.00422,
+  "share_p_h1_below_005": 0.95,
+  "median_p_residual": 0.0213,
+  "share_p_residual_below_005": 0.85,
+  "median_residual_treated": -0.172
+ },
+ "without_ehormones": {
+  "n_treated": 6,
+  "p_h1": 0.000223,
+  "p_residual": 0.00141,
+  "residual_treated": -0.226
+ },
+ "all_cells_gene_superset": {
+  "n_treated": 8,
+  "p_h1": 0.00152,
+  "p_residual": 0.00531,
+  "residual_treated": -0.264
+ }
+}

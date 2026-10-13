@@ -1,0 +1,213 @@
+donor,compartment,group,treatment,stage,pathology,y,clock,n,woi_score
+A13,stroma,natural,,Proliferative,C,0,0.324,11050,0.7174
+A30,stroma,natural,,Secretory Early-Mid,C,,0.7821,109,2.068
+A70,stroma,natural,,Proliferative,C,0,0.2742,327,0.9659
+C01,stroma,combined_pill,norethindrone/E2:1/20,Hormones,C,,0.4855,136,1.122
+C02,stroma,combined_pill,norethindrone/E2:1/20,Hormones (Proliferative Early),C,,1.108,726,1.294
+C03,stroma,natural,-,Proliferative,C,0,0.1443,934,0.8592
+E01,stroma,natural,-,Menstrual,E,,0.08167,1579,1.115
+E02,stroma,combined_pill,norethindrone/E2:1/20,Hormones (Proliferative Early),E,,0.8378,1765,0.8072
+E03,stroma,combined_pill,norethindrone/E2:1/20,Hormones (Inactive),E,,0.6827,1322,1.166
+E04,stroma,combined_pill,norethindrone/E2:1/20,Hormones,E,,1.23,286,1.15
+E05,stroma,combined_pill,norethindrone/E2:1/20,Hormones (Proliferative Early),E,,1.312,321,1.626
+E06,stroma,combined_pill,norethindrone/E2:1/10,Hormones,E,,0.3464,2038,0.6936
+E07,stroma,combined_pill,norethindrone/E2:1/10,Hormones (Inactive),E,,0.891,1647,1.463
+E09,stroma,combined_pill,norethindrone/E2:1/20,Hormones (Secretory Early),E,,1.613,80,1.432
+E1,stroma,natural,,Secretory Mid,C,2,1.6,5721,2.16
+E2,stroma,natural,,Secretory Early-Mid,C,,1.989,2099,1.867
+E3,stroma,natural,,Proliferative,C,0,0.2856,1669,0.907
+ES345,stroma,natural,,Secretory Early,C,1,1.447,4442,1.106
+FX1119,stroma,natural,,Proliferative,C,0,0.04523,657,0.7129
+FX1125,stroma,natural,,Proliferative,E,0,-0.1165,3445,
+FX1146,stroma,natural,,Proliferative,C,0,0.04075,5190,0.7474
+FX1156,stroma,natural,,Secretory Mid,E + F,2,1.791,7872,2.165
+FX1176,stroma,natural,,Proliferative Disordered,E,0,-0.1467,1828,0.7908
+FX1249,stroma,progestin_only,Mirena coil,Hormones,E,,-0.04432,931,1.409
+FX1254,stroma,progestin_only,Desogestrel,Hormones Menstrual,E,,1.157,592,1.776
+FX1259,stroma,natural,,Proliferative Late,E,0,0.09877,2525,0.7958
+FX1289,stroma,natural,,Proliferative Late,E,0,-0.2378,51,
+FX9006,stroma,natural,,Secretory Early,E,1,0.9863,7978,1.076
+Fonseca_10,stroma,natural,,Proliferative,E,0,0.6403,110,
+Fonseca_11,stroma,natural,,Secretory,E + A,,1.692,7600,2.001
+Fonseca_13,stroma,other_Wiley,Wiley protocol(estrogen and testosterone creams and progesterone on days 14-28),Hormones,E + A,,1.755,5918,2.122
+Fonseca_14,stroma,natural,,Secretory,E,,1.712,2941,2.325
+Fonseca_17,stroma,natural,,Proliferative,E + A + F,0,0.6676,4093,0.7844
+GSM5572238,stroma,natural,,Secretory Early-Mid,C,,1.341,3924,
+GSM5572239,stroma,natural,,Proliferative,C,0,0.1399,3421,
+GSM5572240,stroma,natural,,Secretory Early-Mid,C,,1.897,3665,
+GSM6605431,stroma,natural,,Secretory Early,E,1,1.323,3410,1.078
+GSM6605432,stroma,natural,,Proliferative Early,E,0,-0.01027,3283,0.9419
+GSM6605433,stroma,natural,,Proliferative Early,E,0,0.02431,1038,0.8413
+GSM6605434,stroma,natural,,Proliferative,E,0,0.1736,2011,0.9602
+GSM6605435,stroma,natural,,Secretory Mid,E,2,1.221,2375,1.228
+GSM6605436,stroma,natural,,Secretory Mid,E,2,1.258,2017,1.712
+GSM6605437,stroma,natural,,Secretory Mid,C,2,1.64,2795,2.527
+GSM6605438,stroma,natural,,Proliferative,C,0,0.5987,3866,0.9985
+GSM6605439,stroma,natural,,Proliferative Early,C,0,-0.0552,7032,0.8666
+GSM6605440,stroma,natural,,Proliferative Early,C,0,-0.1911,3114,0.8088
+SAMN15049042,stroma,natural,,Proliferative,C,0,-0.1637,356,1.014
+SAMN15049043,stroma,natural,,Secretory Early,C,1,0.8611,1495,1.238
+SAMN15049044,stroma,natural,,Secretory Early,C,1,1.664,2441,1.31
+SAMN15049045,stroma,natural,,Secretory Late,C,,1.48,941,2.126
+SAMN15049046,stroma,natural,,Secretory Early-Mid,C,,1.36,75,1.751
+SAMN15049047,stroma,natural,,Secretory Early-Mid,C,,1.81,4452,2.011
+SAMN15049048,stroma,natural,,Secretory Early-Mid,C,,1.643,54,2.036
+SAMN15049049,stroma,natural,,Secretory Mid,C,2,1.77,4172,2.448
+SAMN15049050,stroma,natural,,Proliferative,C,0,0.1772,101,1.052
+SAMN15049051,stroma,natural,,Secretory Early,C,1,1.631,1135,1.524
+SE03,stroma,natural,,Proliferative,C,0,0.08927,82,0.8877
+SE06,stroma,natural,,Menstrual,C,,0.05431,346,0.7806
+A13,epithelium,natural,,Proliferative,C,0,0.1181,873,0.7174
+A30,epithelium,natural,,Secretory Early-Mid,C,,2.061,302,2.068
+A70,epithelium,natural,,Proliferative,C,0,0.1334,296,0.9659
+C01,epithelium,combined_pill,norethindrone/E2:1/20,Hormones,C,,0.5792,2225,1.122
+C02,epithelium,combined_pill,norethindrone/E2:1/20,Hormones (Proliferative Early),C,,0.7626,3064,1.294
+C03,epithelium,natural,-,Proliferative,C,0,0.1956,1585,0.8592
+E01,epithelium,natural,-,Menstrual,E,,0.1682,199,1.115
+E02,epithelium,combined_pill,norethindrone/E2:1/20,Hormones (Proliferative Early),E,,0.6192,1060,0.8072
+E03,epithelium,combined_pill,norethindrone/E2:1/20,Hormones (Inactive),E,,0.6862,978,1.166
+E04,epithelium,combined_pill,norethindrone/E2:1/20,Hormones,E,,0.7793,294,1.15
+E05,epithelium,combined_pill,norethindrone/E2:1/20,Hormones (Proliferative Early),E,,0.8334,389,1.626
+E06,epithelium,combined_pill,norethindrone/E2:1/10,Hormones,E,,0.4127,1020,0.6936
+E07,epithelium,combined_pill,norethindrone/E2:1/10,Hormones (Inactive),E,,0.7624,247,1.463
+E08,epithelium,combined_pill,norethindrone/E2:1/20,Hormones (Inactive),E,,0.8463,478,1.087
+E09,epithelium,combined_pill,norethindrone/E2:1/20,Hormones (Secretory Early),E,,1.119,2808,1.432
+E1,epithelium,natural,,Secretory Mid,C,2,1.596,226,2.16
+E2,epithelium,natural,,Secretory Early-Mid,C,,1.654,116,1.867
+E3,epithelium,natural,,Proliferative,C,0,0.02375,1354,0.907
+ES345,epithelium,natural,,Secretory Early,C,1,1.31,5000,1.106
+FX1119,epithelium,natural,,Proliferative,C,0,-0.007671,255,0.7129
+FX1146,epithelium,natural,,Proliferative,C,0,0.08232,2555,0.7474
+FX1156,epithelium,natural,,Secretory Mid,E + F,2,2.158,4207,2.165
+FX1176,epithelium,natural,,Proliferative Disordered,E,0,-0.1029,885,0.7908
+FX1249,epithelium,progestin_only,Mirena coil,Hormones,E,,0.5948,2975,1.409
+FX1254,epithelium,progestin_only,Desogestrel,Hormones Menstrual,E,,1.151,624,1.776
+FX1259,epithelium,natural,,Proliferative Late,E,0,-0.1398,2389,0.7958
+FX9006,epithelium,natural,,Secretory Early,E,1,0.8935,2525,1.076
+Fonseca_11,epithelium,natural,,Secretory,E + A,,1.711,65,2.001
+Fonseca_13,epithelium,other_Wiley,Wiley protocol(estrogen and testosterone creams and progesterone on days 14-28),Hormones,E + A,,1.846,108,2.122
+Fonseca_14,epithelium,natural,,Secretory,E,,1.828,182,2.325
+Fonseca_16,epithelium,natural,,Proliferative,E,0,0.07025,102,0.981
+Fonseca_17,epithelium,natural,,Proliferative,E + A + F,0,0.2288,141,0.7844
+Fonseca_18,epithelium,other_Progesterone,Progesterone and estrogen pellets,Menopause_Hormones,E + F,,0.8495,50,1.04
+GSM6605431,epithelium,natural,,Secretory Early,E,1,1.24,2374,1.078
+GSM6605432,epithelium,natural,,Proliferative Early,E,0,0.1306,1969,0.9419
+GSM6605433,epithelium,natural,,Proliferative Early,E,0,0.1763,1095,0.8413
+GSM6605434,epithelium,natural,,Proliferative,E,0,0.0469,1522,0.9602
+GSM6605435,epithelium,natural,,Secretory Mid,E,2,0.9415,2037,1.228
+GSM6605436,epithelium,natural,,Secretory Mid,E,2,1.456,2711,1.712
+GSM6605437,epithelium,natural,,Secretory Mid,C,2,2.281,2715,2.527
+GSM6605438,epithelium,natural,,Proliferative,C,0,0.3899,603,0.9985
+GSM6605439,epithelium,natural,,Proliferative Early,C,0,0.09878,1425,0.8666
+GSM6605440,epithelium,natural,,Proliferative Early,C,0,-0.2173,1169,0.8088
+SAMN15049042,epithelium,natural,,Proliferative,C,0,-0.06108,1004,1.014
+SAMN15049043,epithelium,natural,,Secretory Early,C,1,1.171,1708,1.238
+SAMN15049044,epithelium,natural,,Secretory Early,C,1,0.933,185,1.31
+SAMN15049045,epithelium,natural,,Secretory Late,C,,1.987,2243,2.126
+SAMN15049046,epithelium,natural,,Secretory Early-Mid,C,,1.52,3291,1.751
+SAMN15049047,epithelium,natural,,Secretory Early-Mid,C,,1.731,3023,2.011
+SAMN15049048,epithelium,natural,,Secretory Early-Mid,C,,1.851,13882,2.036
+SAMN15049049,epithelium,natural,,Secretory Mid,C,2,2.005,4344,2.448
+SAMN15049050,epithelium,natural,,Proliferative,C,0,0.1488,1959,1.052
+SAMN15049051,epithelium,natural,,Secretory Early,C,1,1.367,1374,1.524
+SE02,epithelium,natural,,Proliferative Early,C,0,0.1669,50,1.136
+SE03,epithelium,natural,,Proliferative,C,0,-0.03828,87,0.8877
+SE06,epithelium,natural,,Menstrual,C,,-0.3057,63,0.7806
+A13,endothelium,natural,,Proliferative,C,0,1.43,673,0.7174
+A30,endothelium,natural,,Secretory Early-Mid,C,,0.8919,1608,2.068
+A70,endothelium,natural,,Proliferative,C,0,-0.778,1975,0.9659
+C02,endothelium,combined_pill,norethindrone/E2:1/20,Hormones (Proliferative Early),C,,0.6005,773,1.294
+C03,endothelium,natural,-,Proliferative,C,0,0.6454,217,0.8592
+E01,endothelium,natural,-,Menstrual,E,,-0.1634,115,1.115
+E02,endothelium,combined_pill,norethindrone/E2:1/20,Hormones (Proliferative Early),E,,-0.1437,70,0.8072
+E03,endothelium,combined_pill,norethindrone/E2:1/20,Hormones (Inactive),E,,0.3528,361,1.166
+E04,endothelium,combined_pill,norethindrone/E2:1/20,Hormones,E,,0.5399,76,1.15
+E05,endothelium,combined_pill,norethindrone/E2:1/20,Hormones (Proliferative Early),E,,0.7864,199,1.626
+E06,endothelium,combined_pill,norethindrone/E2:1/10,Hormones,E,,0.6034,198,0.6936
+E07,endothelium,combined_pill,norethindrone/E2:1/10,Hormones (Inactive),E,,0.4276,223,1.463
+E1,endothelium,natural,,Secretory Mid,C,2,1.761,119,2.16
+E3,endothelium,natural,,Proliferative,C,0,0.3503,149,0.907
+ES345,endothelium,natural,,Secretory Early,C,1,0.7628,256,1.106
+FX1146,endothelium,natural,,Proliferative,C,0,0.2782,303,0.7474
+FX1156,endothelium,natural,,Secretory Mid,E + F,2,1.16,82,2.165
+FX1176,endothelium,natural,,Proliferative Disordered,E,0,0.7969,73,0.7908
+FX1249,endothelium,progestin_only,Mirena coil,Hormones,E,,-0.5841,118,1.409
+FX1254,endothelium,progestin_only,Desogestrel,Hormones Menstrual,E,,0.0697,202,1.776
+FX1259,endothelium,natural,,Proliferative Late,E,0,0.6354,195,0.7958
+FX9006,endothelium,natural,,Secretory Early,E,1,0.4995,497,1.076
+Fonseca_13,endothelium,other_Wiley,Wiley protocol(estrogen and testosterone creams and progesterone on days 14-28),Hormones,E + A,,1.099,159,2.122
+Fonseca_14,endothelium,natural,,Secretory,E,,0.9908,160,2.325
+Fonseca_16,endothelium,natural,,Proliferative,E,0,0.2449,374,0.981
+Fonseca_17,endothelium,natural,,Proliferative,E + A + F,0,1.772,149,0.7844
+Fonseca_18,endothelium,other_Progesterone,Progesterone and estrogen pellets,Menopause_Hormones,E + F,,0.3547,2140,1.04
+GSM5572240,endothelium,natural,,Secretory Early-Mid,C,,1.18,80,
+GSM6605431,endothelium,natural,,Secretory Early,E,1,0.7932,284,1.078
+GSM6605432,endothelium,natural,,Proliferative Early,E,0,0.2578,423,0.9419
+GSM6605433,endothelium,natural,,Proliferative Early,E,0,0.232,525,0.8413
+GSM6605434,endothelium,natural,,Proliferative,E,0,0.1027,348,0.9602
+GSM6605435,endothelium,natural,,Secretory Mid,E,2,1.316,271,1.228
+GSM6605436,endothelium,natural,,Secretory Mid,E,2,1.149,259,1.712
+GSM6605437,endothelium,natural,,Secretory Mid,C,2,0.8743,749,2.527
+GSM6605438,endothelium,natural,,Proliferative,C,0,0.7727,183,0.9985
+GSM6605439,endothelium,natural,,Proliferative Early,C,0,0.07533,710,0.8666
+GSM6605440,endothelium,natural,,Proliferative Early,C,0,0.295,582,0.8088
+SAMN15049043,endothelium,natural,,Secretory Early,C,1,0.6629,115,1.238
+SAMN15049044,endothelium,natural,,Secretory Early,C,1,0.6611,414,1.31
+SAMN15049045,endothelium,natural,,Secretory Late,C,,1.813,283,2.126
+SAMN15049047,endothelium,natural,,Secretory Early-Mid,C,,1.627,115,2.011
+SAMN15049048,endothelium,natural,,Secretory Early-Mid,C,,2.431,280,2.036
+SAMN15049049,endothelium,natural,,Secretory Mid,C,2,2.568,60,2.448
+SAMN15049051,endothelium,natural,,Secretory Early,C,1,1.651,72,1.524
+A13,immune,natural,,Proliferative,C,0,0.5778,1089,0.7174
+A70,immune,natural,,Proliferative,C,0,-0.04857,198,0.9659
+C01,immune,combined_pill,norethindrone/E2:1/20,Hormones,C,,0.1415,455,1.122
+C02,immune,combined_pill,norethindrone/E2:1/20,Hormones (Proliferative Early),C,,0.8809,919,1.294
+C03,immune,natural,-,Proliferative,C,0,0.07285,1414,0.8592
+E01,immune,natural,-,Menstrual,E,,0.1787,1745,1.115
+E02,immune,combined_pill,norethindrone/E2:1/20,Hormones (Proliferative Early),E,,0.6168,764,0.8072
+E03,immune,combined_pill,norethindrone/E2:1/20,Hormones (Inactive),E,,0.3709,985,1.166
+E04,immune,combined_pill,norethindrone/E2:1/20,Hormones,E,,0.06438,2119,1.15
+E05,immune,combined_pill,norethindrone/E2:1/20,Hormones (Proliferative Early),E,,0.2721,1235,1.626
+E06,immune,combined_pill,norethindrone/E2:1/10,Hormones,E,,0.1264,312,0.6936
+E07,immune,combined_pill,norethindrone/E2:1/10,Hormones (Inactive),E,,-0.1652,449,1.463
+E08,immune,combined_pill,norethindrone/E2:1/20,Hormones (Inactive),E,,0.2581,1314,1.087
+E09,immune,combined_pill,norethindrone/E2:1/20,Hormones (Secretory Early),E,,0.789,569,1.432
+E1,immune,natural,,Secretory Mid,C,2,1.399,900,2.16
+E2,immune,natural,,Secretory Early-Mid,C,,0.6939,120,1.867
+E3,immune,natural,,Proliferative,C,0,-0.01041,943,0.907
+ES345,immune,natural,,Secretory Early,C,1,0.6632,110,1.106
+FX1119,immune,natural,,Proliferative,C,0,0.1085,167,0.7129
+FX1125,immune,natural,,Proliferative,E,0,0.04752,795,
+FX1146,immune,natural,,Proliferative,C,0,0.329,366,0.7474
+FX1156,immune,natural,,Secretory Mid,E + F,2,1.114,131,2.165
+FX1176,immune,natural,,Proliferative Disordered,E,0,0.04869,376,0.7908
+FX1249,immune,progestin_only,Mirena coil,Hormones,E,,0.3717,1790,1.409
+FX1254,immune,progestin_only,Desogestrel,Hormones Menstrual,E,,-0.3158,4151,1.776
+FX1259,immune,natural,,Proliferative Late,E,0,0.4233,408,0.7958
+FX1285,immune,natural,,Proliferative Early,E,0,-0.3203,71,
+FX9006,immune,natural,,Secretory Early,E,1,1.095,319,1.076
+GSM5572238,immune,natural,,Secretory Early-Mid,C,,0.7748,174,
+GSM5572239,immune,natural,,Proliferative,C,0,0.229,437,
+GSM5572240,immune,natural,,Secretory Early-Mid,C,,0.6931,350,
+GSM6605431,immune,natural,,Secretory Early,E,1,1.217,2294,1.078
+GSM6605432,immune,natural,,Proliferative Early,E,0,0.5616,1672,0.9419
+GSM6605433,immune,natural,,Proliferative Early,E,0,0.485,2774,0.8413
+GSM6605434,immune,natural,,Proliferative,E,0,0.07119,2279,0.9602
+GSM6605435,immune,natural,,Secretory Mid,E,2,1.126,1590,1.228
+GSM6605436,immune,natural,,Secretory Mid,E,2,1.196,1818,1.712
+GSM6605437,immune,natural,,Secretory Mid,C,2,1.968,986,2.527
+GSM6605438,immune,natural,,Proliferative,C,0,0.2998,657,0.9985
+GSM6605439,immune,natural,,Proliferative Early,C,0,-0.1357,1157,0.8666
+GSM6605440,immune,natural,,Proliferative Early,C,0,-0.2971,1030,0.8088
+SAMN15049042,immune,natural,,Proliferative,C,0,0.5585,1195,1.014
+SAMN15049043,immune,natural,,Secretory Early,C,1,0.4597,277,1.238
+SAMN15049044,immune,natural,,Secretory Early,C,1,1.309,628,1.31
+SAMN15049045,immune,natural,,Secretory Late,C,,0.9525,378,2.126
+SAMN15049046,immune,natural,,Secretory Early-Mid,C,,1.324,350,1.751
+SAMN15049047,immune,natural,,Secretory Early-Mid,C,,2.209,506,2.011
+SAMN15049048,immune,natural,,Secretory Early-Mid,C,,1.962,155,2.036
+SAMN15049049,immune,natural,,Secretory Mid,C,2,1.593,109,2.448
+SAMN15049050,immune,natural,,Proliferative,C,0,0.5631,73,1.052
+SAMN15049051,immune,natural,,Secretory Early,C,1,1.327,256,1.524
+SE02,immune,natural,,Proliferative Early,C,0,-0.1764,59,1.136
+SE06,immune,natural,,Menstrual,C,,0.149,163,0.7806
