@@ -20,7 +20,7 @@ The notebook
 
 1. downloads every raw input (about 28 GB) and checks each file against `inputs/data_manifest.json`,
 2. runs the analysis steps S1 to S15 in order, with a log for each step in `work/logs/`,
-3. redraws Figures 1 to 4 and S1 to S4 in `figures/`,
+3. redraws Figures 1 to 5 and S1 to S4 in `figures/`,
 4. runs the unit tests,
 5. compares every regenerated number with the committed `outputs/` and prints `REPRODUCED` when all agree.
 

@@ -46,9 +46,9 @@ def jitter(n, w=0.12, seed=0):
     return np.random.default_rng(seed).uniform(-w, w, n)
 
 
-def save(fig, k, w, h, t=40):
+def save(fig, k, w, h, t=40, margin=None):
     os.makedirs(FIG, exist_ok=True)
-    fig.update_layout(template="plotly_white", width=w, height=h, font=dict(size=FS), margin=dict(l=70, r=15, t=t, b=40))
+    fig.update_layout(template="plotly_white", width=w, height=h, font=dict(size=FS), margin=margin or dict(l=70, r=15, t=t, b=40))
     fig.update_annotations(font_size=FS)
     fig.update_xaxes(title_font_size=FS, tickfont_size=FS, tickangle=0); fig.update_yaxes(title_font_size=FS, tickfont_size=FS)
     fig.write_html(os.path.join(FIG, f"figure{k}.html"), include_plotlyjs="cdn")
@@ -74,6 +74,147 @@ def strip(fig, r, c, y, groups, labels, showlegend, tname):
     return y[groups.isin(labels)]
 
 
+def figure_flow():
+    """Figure 1: study flow in the style of the graphical abstract, drawn with plotly shapes. Clock training on the atlas,
+    the five cohorts with their sizes, and the outcomes. Cell and nuclei totals from the $WORK profile metadata, all
+    other numbers from outputs/."""
+    import math
+    O = lambda f: json.load(open(os.path.join(OUT, f)))
+    s2, hu = O("s2_nuclei_summary.json"), O("s6_huang_summary.json")
+    n4, c4 = O("s4_nuclei_summary.json")["main"], O("s4_cells_combined_pill_summary.json")["main"]
+    mn, mc = (pd.read_csv(os.path.join(W, f"profiles_{k}_meta.csv")) for k in ("nuclei", "cells"))
+    B = pd.read_csv(os.path.join(OUT, "s7_bulk_samples.csv")); nb = B.groupby(["set", "group"]).size()
+    a4, c4d = pd.read_csv(os.path.join(OUT, "s4_nuclei_donors.csv")), pd.read_csv(os.path.join(OUT, "s4_cells_combined_pill_donors.csv"))
+    heca = set(a4.donor[a4.group.isin(["natural", "progestin_only"])]) | set(c4d.donor[c4d.group.isin(["natural", "combined_pill"])])
+    n_huang = sum(hu["nuclei_per_compartment"].values())
+    g6 = {k: int(nb["GSE60129", k]) for k in ("LNG-IUS", "DMPA", "control")}
+    g13 = {k: int(nb["GSE137765", k]) for k in ("LNG-IUS", "COC", "control", "Cu-IUD")}
+    women = len(heca) + sum(hu["donors"].values()) + sum(g6.values()) + sum(g13.values())
+    total = int(mn.n.sum()) + int(mc.n.sum()) + n_huang
+
+    W_, H_ = 960, 610
+    STR, EPI, INK, GREY, TGREY = C[0], C[1], "#2A3F5F", "#8C96A8", "#5A6478"
+    fig = go.Figure()
+    fig.update_xaxes(range=[0, W_], visible=False); fig.update_yaxes(range=[H_, 0], visible=False)
+    rgba = lambda h, a: f"rgba({int(h[1:3], 16)},{int(h[3:5], 16)},{int(h[5:7], 16)},{a})"
+
+    def text(x, y, t, size=FS, bold=False, col=INK, anchor="center"):
+        fig.add_annotation(x=x, y=y, text=f"<b>{t}</b>" if bold else t, showarrow=False, xanchor=anchor, yanchor="middle",
+                           font=dict(size=size, color=col))
+
+    def path(d, line, fill=None, width=2):
+        fig.add_shape(type="path", path=d, line=dict(color=line, width=width), fillcolor=fill or "rgba(0,0,0,0)")
+
+    def circle(x, y, r, line, fill=None, width=2):
+        fig.add_shape(type="circle", x0=x - r, x1=x + r, y0=y - r, y1=y + r, line=dict(color=line, width=width), fillcolor=fill or "rgba(0,0,0,0)")
+
+    def line(x0, y0, x1, y1, col, width=2, dash=None):
+        fig.add_shape(type="line", x0=x0, y0=y0, x1=x1, y1=y1, line=dict(color=col, width=width, dash=dash))
+
+    def arrow(x0, y0, x1, y1, width=2.5):
+        fig.add_annotation(x=x1, y=y1, ax=x0, ay=y0, xref="x", yref="y", axref="x", ayref="y", text="", showarrow=True,
+                           arrowhead=2, arrowsize=1.1, arrowwidth=width, arrowcolor=GREY)
+
+    def spindle(cx, cy, sc, ang):
+        r = math.radians(ang)
+        tr = lambda x, y: (cx + sc * (x * math.cos(r) - y * math.sin(r)), cy + sc * (x * math.sin(r) + y * math.cos(r)))
+        pts = [(-46, 0), (-24, -14), (24, -14), (46, 0), (24, 14), (-24, 14), (-46, 0)]
+        q = [tr(*p) for p in pts]
+        path(f"M{q[0][0]:.1f},{q[0][1]:.1f} C{q[1][0]:.1f},{q[1][1]:.1f} {q[2][0]:.1f},{q[2][1]:.1f} {q[3][0]:.1f},{q[3][1]:.1f} "
+             f"C{q[4][0]:.1f},{q[4][1]:.1f} {q[5][0]:.1f},{q[5][1]:.1f} {q[6][0]:.1f},{q[6][1]:.1f} Z", STR, rgba(STR, 0.25))
+        fig.add_shape(type="circle", x0=cx - 10 * sc, x1=cx + 10 * sc, y0=cy - 5 * sc, y1=cy + 5 * sc, line=dict(width=0), fillcolor=STR)
+
+    def gland(cx, cy, ro, ri, n):
+        for i in range(n):
+            a0, a1 = 2 * math.pi * i / n, 2 * math.pi * (i + 1) / n
+            p = [(cx + ri * math.cos(a0), cy + ri * math.sin(a0)), (cx + ro * math.cos(a0), cy + ro * math.sin(a0)),
+                 (cx + ro * math.cos(a1), cy + ro * math.sin(a1)), (cx + ri * math.cos(a1), cy + ri * math.sin(a1))]
+            path("M" + " L".join(f"{x:.1f},{y:.1f}" for x, y in p) + " Z", EPI, rgba(EPI, 0.25), 1.5)
+            am, rm = (a0 + a1) / 2, ri + (ro - ri) * 0.62
+            circle(cx + rm * math.cos(am), cy + rm * math.sin(am), (ro - ri) * 0.16, EPI, EPI, 0)
+
+    def clock(cx, cy, r, col, hour):
+        circle(cx, cy, r, col, "white", 3)
+        for k in range(12):
+            a = math.radians(k * 30)
+            line(cx + 0.78 * r * math.sin(a), cy - 0.78 * r * math.cos(a), cx + 0.92 * r * math.sin(a), cy - 0.92 * r * math.cos(a), col, 1.5)
+        for deg, ln, wd in ((hour, 0.55, 4), ((hour % 30) * 12, 0.8, 2.5)):
+            a = math.radians(deg); line(cx, cy, cx + ln * r * math.sin(a), cy - ln * r * math.cos(a), col, wd)
+        circle(cx, cy, 3, col, col, 0)
+
+    TECH = {"nucleus": C[3], "cell": C[5], "array": C[4]}  # one colour per technology, none shared with stroma or epithelium
+
+    def tech_icon(cx, cy, kind):
+        col = TECH[kind]
+        if kind == "nucleus":
+            circle(cx, cy, 13, col, rgba(col, 0.35), 2.5); circle(cx - 4, cy - 3, 3, col, col, 0); circle(cx + 4, cy + 4, 2.5, col, col, 0)
+        elif kind == "cell":
+            circle(cx, cy, 16, col, rgba(col, 0.12), 2.5); circle(cx + 2, cy - 1, 7, col, rgba(col, 0.55), 1.5)
+        else:
+            for i in range(3):
+                for j in range(3):
+                    fig.add_shape(type="rect", x0=cx - 15 + 10.5 * i, x1=cx - 6.5 + 10.5 * i, y0=cy - 15 + 10.5 * j, y1=cy - 6.5 + 10.5 * j,
+                                  line=dict(width=0), fillcolor=rgba(col, (0.35, 0.65, 1.0)[(i + 2 * j) % 3]))
+
+    # column 1: clock training
+    text(10, 20, "Clock training", 18, True, anchor="left")
+    path("M48,45 L262,45 Q282,45 282,65 L282,135 Q282,155 262,155 L48,155 Q28,155 28,135 L28,65 Q28,45 48,45 Z", GREY, "white", 2)
+    for x, y, a in ((65, 75, 15), (70, 130, -20), (120, 140, 10), (235, 72, -15), (250, 128, 25), (195, 140, -5)):
+        spindle(x, y, 0.62, a)
+    gland(155, 95, 34, 16, 12)
+    text(155, 180, "Human Endometrial Cell Atlas", FS, True)
+    text(155, 202, "single-nucleus RNA sequencing")
+    text(155, 224, f"{int(mn.n.sum()):,} nuclei, {mn.donor.nunique()} women")
+    text(155, 246, f"{s2['pc1']['stroma']['donors_train']} staged natural cycles")
+    arrow(130, 262, 92, 290); arrow(180, 262, 218, 290)
+    h1 = s2["h1"]  # clock hands at the progestin-only medians, hour angle = stage x 90 degrees, as in the graphical abstract
+    clock(80, 330, 34, STR, 90 * h1["stroma_median_treated"]); clock(225, 330, 34, EPI, 90 * h1["epithelium_median_treated"])
+    text(80, 384, "Stromal clock", FS, True, STR); text(225, 384, "Epithelial clock", FS, True, EPI)
+    text(155, 418, "Scale: 0 proliferative,", col=TGREY); text(155, 440, "1 early, 2 mid-secretory", col=TGREY)
+
+    # column 2: five cohorts
+    path("M300,300 L318,315 L300,330", GREY, None, 3)
+    text(340, 20, "Applied to five cohorts", 18, True, anchor="left")
+    rows = [("nucleus", "Cell Atlas, single-nucleus", f"{int(mn.n.sum()):,} nuclei", f"Progestin only {n4['n_treated']}", f"natural {n4['n_natural']}"),
+            ("cell", "Cell Atlas, single-cell", f"{int(mc.n.sum()):,} cells", f"Combined pill {c4['n_treated']}", f"natural {c4['n_natural']}"),
+            ("nucleus", "Huang 2026, single-nucleus", f"{n_huang:,} nuclei", f"Programmed cycle {hu['donors']['Controlled']}", f"natural LH+7 {hu['donors']['Natural']}"),
+            ("array", "GSE60129, microarray", f"{sum(g6.values())} biopsies", f"LNG-IUS {g6['LNG-IUS']}, DMPA {g6['DMPA']}", f"controls {g6['control']}"),
+            ("array", "GSE137765, microarray", f"{sum(g13.values())} biopsies", f"LNG-IUS {g13['LNG-IUS']}, COC {g13['COC']}", f"no hormones {g13['control'] + g13['Cu-IUD']}")]
+    for i, (kind, name, size, exp, comp) in enumerate(rows):
+        y = 62 + i * 98
+        tech_icon(362, y + 22, kind)
+        fig.add_shape(type="line", x0=382, x1=382, y0=y - 10, y1=y + 54, line=dict(color=TECH[kind], width=3))
+        text(392, y, name, FS, True, anchor="left")
+        text(392, y + 22, size, col=TGREY, anchor="left")
+        text(392, y + 44, f"<b>{exp}</b> <span style='color:{TGREY}'>vs</span> {comp}", anchor="left")
+        if i < 4:
+            line(392, y + 70, 715, y + 70, "#DCE1EA", 1.5)
+
+    # column 3: outcomes
+    path("M722,300 L740,315 L722,330", GREY, None, 3)
+    text(760, 20, "Outcomes", 18, True, anchor="left")
+    x0, x1 = 775, 935; px = lambda v: x0 + (x1 - x0) * v / 2
+    line(x0, 110, x1, 110, INK, 2.5)
+    for v in (0, 1, 2):
+        line(px(v), 110, px(v), 118, INK, 2.5)
+    e, st = px(h1["epithelium_median_treated"]), px(h1["stroma_median_treated"])
+    line(e, 88, st, 88, GREY, 3)
+    path(f"M{e},76 L{e + 12},88 L{e},100 L{e - 12},88 Z", EPI, EPI, 0)
+    circle(st, 88, 10, STR, STR, 0)
+    text(855, 145, "Stroma minus", FS, True); text(855, 167, "epithelium index", FS, True)
+    text(855, 189, "primary, pre-specified", col=TGREY)
+    gland(820, 262, 30, 14, 11)
+    fig.add_shape(type="rect", x0=870, x1=900, y0=232, y1=292, line=dict(color=C[2], width=2), fillcolor="white")
+    fig.add_shape(type="rect", x0=870, x1=900, y0=272, y1=292, line=dict(width=0), fillcolor=C[2])
+    text(855, 322, "Epithelial window-of-", FS, True); text(855, 344, "implantation score", FS, True)
+    text(855, 400, "Robustness", FS, True); text(855, 422, "18 post hoc analyses", col=TGREY)
+
+    line(10, 562, 950, 562, "#DCE1EA", 1.5)
+    text(480, 588, f"{women} women, {total:,} cells and nuclei, the woman as the unit of analysis", FS, True)
+    fig.update_layout(showlegend=False, plot_bgcolor="white")
+    save(fig, 1, W_ + 4, H_ + 4, margin=dict(l=2, r=2, t=2, b=2))
+
+
 def figure1():
     d = pd.read_csv(os.path.join(OUT, "s2_nuclei_donors.csv")); s = json.load(open(os.path.join(OUT, "s2_nuclei_summary.json")))
     comps = ["stroma", "epithelium", "endothelium", "immune"]
@@ -86,7 +227,7 @@ def figure1():
         fig.add_hline(y=v, line=dict(color="lightgrey", dash="dot", width=1))
     for r in (1, 2):
         fig.update_yaxes(title_text="Cycle stage (clock)", row=r, col=1)
-    save(fig, 1, 960, 720)
+    save(fig, 2, 960, 720)
 
 
 def figure2():
@@ -117,7 +258,7 @@ def figure2():
         fig.add_annotation(text=f"{ptxt(s['p_s1_vs_natural'])}, permutation {ptxt(s['perm_s1'])}", showarrow=False,
                            xref=ax(2 + j, "x"), yref=ax(2 + j, "y"), x=0.5, y=1.02, xanchor="center", yanchor="bottom")
     fig.update_layout(legend=dict(orientation="h", y=-0.1))
-    save(fig, 2, 920, 820)
+    save(fig, 3, 920, 820)
 
 
 def donor_values(s, tg, genes):
@@ -153,7 +294,7 @@ def figure3():
     for c, t in enumerate(("Share of change<br>reached", "Epithelial<br>WOI score", "Epithelial <i>PGR</i><br>(log expression)",
                            "Epithelial <i>ESR1</i><br>(log expression)"), 1):
         fig.update_yaxes(title_text=t, row=c, col=1)
-    save(fig, 3, 900, 1160, t=50)
+    save(fig, 4, 900, 1160, t=50)
 
 
 GCOL = {"Natural": C[0], "Control": C[0], "Cu-IUD": C[5], "Programmed": C[1], "LNG-IUS": C[1], "DMPA": C[3], "COC": C[9],
@@ -194,7 +335,7 @@ def figure4():
         strip2(fig, r, 3, d.woi, d.group, o, sm["p_woi_lower"])
     for r, t in ((1, "Huang 2026<br>(snRNA-seq)"), (2, "GSE60129<br>(microarray)"), (3, "GSE137765<br>(microarray)")):
         fig.update_yaxes(title_text=t, row=r, col=1)
-    save(fig, 4, 960, 1000, t=50)
+    save(fig, 5, 960, 1000, t=50)
 
 
 def figure_s1():
@@ -275,5 +416,5 @@ def figure_s4():
 
 
 if __name__ == "__main__":
-    figure1(); figure2(); figure3(); figure4(); figure_s1(); figure_s2(); figure_s3(); figure_s4()
+    figure_flow(); figure1(); figure2(); figure3(); figure4(); figure_s1(); figure_s2(); figure_s3(); figure_s4()
     print(sorted(os.listdir(FIG)))
