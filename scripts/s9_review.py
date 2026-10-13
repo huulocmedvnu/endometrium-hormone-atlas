@@ -127,6 +127,22 @@ def r4_joint(tag, tg):
     return out
 
 
+def r4_factorial(tag, tg):
+    """Stroma minus epithelium index and distance from the natural line by endometriosis and exposure (natural or tg)."""
+    d = pd.read_csv(os.path.join(OUT, f"s4_{tag}_donors.csv"))
+    d = d[d.group.isin(["natural", tg])].dropna(subset=["dyssynchrony"])
+    d["endometriosis"] = d.Endometrial_pathology.astype(str).str.contains("E")
+    cell = lambda g, e: d[(d.group == g) & (d.endometriosis == e)]
+    out = {f"{g}_{'endometriosis' if e else 'no_endometriosis'}": dict(n=len(cell(g, e)), index_median=round(float(cell(g, e).dyssynchrony.median()), 3),
+                                                                        distance_median=round(float(cell(g, e).residual.median()), 3))
+           for g in ("natural", tg) for e in (True, False)}
+    ne, nn = cell("natural", True), cell("natural", False)
+    out["p_natural_endometriosis_vs_none_index"] = mw(ne.dyssynchrony, nn.dyssynchrony, "two-sided")
+    out["p_natural_endometriosis_vs_none_distance"] = mw(ne.residual, nn.residual, "two-sided")
+    out["p_exposed_no_endometriosis_index_above_natural_no_endometriosis"] = mw(cell(tg, False).dyssynchrony, nn.dyssynchrony, "greater")
+    return out
+
+
 def axis_genes(P, M, comp, n, up=True):
     nat = M[(M.compartment == comp) & (M.n >= MIN_N) & (M.group == "natural")]
     p0, p2 = P.loc[nat.index[nat.y == 0]].mean(), P.loc[nat.index[nat.y == 2]].mean()
@@ -201,7 +217,7 @@ if __name__ == "__main__":
     R = {}
     for tag, tg in SETS.items():
         R[tag] = dict(r1_all_compartments=r1_all_compartments(tag, tg), r2_staged_only=r2_staged(tag, tg), r3_ood=r3_ood(tag, tg),
-                      r4_joint=r4_joint(tag, tg), r5_cross_dataset=r5_cross(tag, tg), r6_ambient=r6_ambient(tag, tg))
+                      r4_joint=r4_joint(tag, tg), r4_factorial=r4_factorial(tag, tg), r5_cross_dataset=r5_cross(tag, tg), r6_ambient=r6_ambient(tag, tg))
     R["huang_r2_lodo_line"] = r2_huang_lodo()
     R["bulk_r7"] = r7_bulk()
     n2, c2 = json.load(open(os.path.join(OUT, "s2_nuclei_summary.json"))), json.load(open(os.path.join(OUT, "s2_cells_combined_pill_summary.json")))

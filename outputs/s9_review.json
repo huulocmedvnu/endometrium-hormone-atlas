@@ -120,6 +120,31 @@
     "natural": 1.449,
     "p_two_sided": 0.00157
    }
+  },
+  "r4_factorial": {
+   "natural_endometriosis": {
+    "n": 35,
+    "index_median": -0.031,
+    "distance_median": -0.039
+   },
+   "natural_no_endometriosis": {
+    "n": 13,
+    "index_median": -0.03,
+    "distance_median": -0.025
+   },
+   "progestin_only_endometriosis": {
+    "n": 5,
+    "index_median": 0.401,
+    "distance_median": -0.271
+   },
+   "progestin_only_no_endometriosis": {
+    "n": 3,
+    "index_median": 0.258,
+    "distance_median": -0.201
+   },
+   "p_natural_endometriosis_vs_none_index": 0.626,
+   "p_natural_endometriosis_vs_none_distance": 0.516,
+   "p_exposed_no_endometriosis_index_above_natural_no_endometriosis": 0.0125
   }
  },
  "cells_combined_pill": {
@@ -254,6 +279,31 @@
     "natural": 0.95,
     "p_two_sided": 0.825
    }
+  },
+  "r4_factorial": {
+   "natural_endometriosis": {
+    "n": 14,
+    "index_median": -0.032,
+    "distance_median": 0.019
+   },
+   "natural_no_endometriosis": {
+    "n": 26,
+    "index_median": 0.027,
+    "distance_median": -0.031
+   },
+   "combined_pill_endometriosis": {
+    "n": 7,
+    "index_median": 0.219,
+    "distance_median": -0.235
+   },
+   "combined_pill_no_endometriosis": {
+    "n": 2,
+    "index_median": 0.126,
+    "distance_median": -0.14
+   },
+   "p_natural_endometriosis_vs_none_index": 0.966,
+   "p_natural_endometriosis_vs_none_distance": 0.898,
+   "p_exposed_no_endometriosis_index_above_natural_no_endometriosis": 0.291
   }
  },
  "huang_r2_lodo_line": {

@@ -222,3 +222,10 @@ read 0.59 and 0.41.
   k-nearest neighbours, and a marker score (mean of the 50 genes most increased minus the 50 most decreased from
   proliferative to mid-secretory, selected inside each fold, rescaled on training donors). MAE, RMSE, Spearman,
   calibration slope, and the H1 index test under each model.
+
+## R4 breakdown by endometriosis and exposure (added 2026-10-13, after all results, post hoc, descriptive)
+
+- R4 split into four groups: natural or exposed (progestin-only in snRNA-seq, combined pill in scRNA-seq), with or
+  without endometriosis. Reported: median stroma minus epithelium index and distance from the natural line per group,
+  two-sided Mann-Whitney for natural donors with against without endometriosis, and one-sided Mann-Whitney for exposed
+  donors without endometriosis against natural donors without endometriosis (index higher).
