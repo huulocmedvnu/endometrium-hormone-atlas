@@ -259,7 +259,9 @@ if __name__ == "__main__":
     n2, c2 = json.load(open(os.path.join(OUT, "s2_nuclei_summary.json"))), json.load(open(os.path.join(OUT, "s2_cells_combined_pill_summary.json")))
     n4, c4 = json.load(open(os.path.join(OUT, "s4_nuclei_summary.json"))), json.load(open(os.path.join(OUT, "s4_cells_combined_pill_summary.json")))
     h, b = json.load(open(os.path.join(OUT, "s6_huang_summary.json"))), json.load(open(os.path.join(OUT, "s7_bulk_summary.json")))
-    fam = {"delay": [n4["main"]["p_s1_vs_natural"], c4["main"]["p_s1_vs_natural"], h["unscaled"]["p_e1_dyssynchrony_higher"],
+    fam = {"index": [n2["h1"]["p_dyssynchrony_higher"], c2["h1"]["p_dyssynchrony_higher"], h["unscaled"]["p_e1_dyssynchrony_higher"],
+                     b["GSE60129"]["p_dyssynchrony_higher"], b["GSE137765"]["p_dyssynchrony_higher"]],
+           "delay": [n4["main"]["p_s1_vs_natural"], c4["main"]["p_s1_vs_natural"], h["unscaled"]["p_e1_dyssynchrony_higher"],
                      b["GSE60129"]["p_dyssynchrony_higher"], b["GSE137765"]["p_dyssynchrony_higher"]],
            "woi": [n2["h2"]["p_treated_lower_than_mid"], c2["h2"]["p_treated_lower_than_mid"], h["unscaled"]["p_e2_woi_lower"],
                    b["GSE60129"]["p_woi_lower"], b["GSE137765"]["p_woi_lower"]]}

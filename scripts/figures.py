@@ -280,8 +280,7 @@ def figure3():
             fig.add_trace(go.Violin(x=np.full(len(v), i), y=v, line=dict(color=col), fillcolor=col, opacity=0.5, points=False,
                                     box_visible=True, meanline_visible=False, showlegend=False, width=0.7), 1, r)
         fig.update_xaxes(tickvals=[0, 1], ticktext=["Stroma", "Epithelium"], row=1, col=r)
-        fig.add_annotation(text=ptxt(sm['axis']['p_up_epithelium_lags_stroma']), showarrow=False, xref=ax(r, "x"),
-                           yref=ax(r, "y"), x=0.98, y=1.0, xanchor="right", yanchor="top")
+        # per-gene distribution is descriptive only, the within-woman test is given in the text
         s2 = "s2_nuclei_donors.csv" if tag == "nuclei" else "s2_cells_combined_pill_donors.csv"
         d = pd.read_csv(os.path.join(OUT, s2)); d = d[d.compartment == "epithelium"]
         strip(fig, 2, r, d.woi_score, lab_of(d, tg), ["proliferative", "secretory_mid", "treated"], False, tname)
@@ -347,7 +346,7 @@ def figure_s1():
         d = S[S[comp].notna()]
         strip2(fig, 1, c, d[comp], d.g, ["LH+2", "LH+8"], b[comp]["p_lh8_higher"], ncol=2)
     fig.update_yaxes(title_text="Clock, within-set z-scores", row=1, col=1)
-    save(fig, "S3", 640, 400)
+    save(fig, "S1", 640, 400)
 
 
 def figure_s2():
@@ -388,7 +387,7 @@ def figure_s3():
         fig.update_xaxes(title_text="Median difference from<br>the other compartments", range=[-0.6, 0.95], row=1, col=c)
         fig.update_yaxes(autorange="reversed", row=1, col=c)
     fig.update_layout(legend=dict(orientation="h", y=-0.35))
-    save(fig, "S1", 960, 440)
+    save(fig, "S3", 960, 440)
 
 
 def figure_s4():
