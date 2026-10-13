@@ -7,7 +7,7 @@ from scipy.stats import mannwhitneyu, wilcoxon, spearmanr
 from sklearn.decomposition import PCA
 from sklearn.linear_model import RidgeCV
 from s2_clock import stage_value, treatment_group, ROOT, W, MIN_N, N_HVG, ALPHAS, fit
-from s4_sensitivity import residuals
+from s4_sensitivity import residuals, lodo_h
 from s6_external_huang import zscore, huang_profiles, heca, COMPS
 from s7_external_bulk import series_matrix, gpl6244_symbols
 
@@ -114,16 +114,19 @@ def r4_joint(tag, tg):
     d["log_nuclei"] = np.log(n.reindex(d.index).astype(float))
     d["study_tan"] = (info.dataset.reindex(d.index).astype(str) == "Tan").astype(float)
     out = {}
-    for name, cov in (("treatment_endometriosis", ["treated", "endometriosis"]),
+    base = d.dropna(subset=["residual", "treated", "endometriosis"]).index
+    for name, cov in (("treatment_only", ["treated"]), ("treatment_endometriosis", ["treated", "endometriosis"]),
                       ("plus_age_nuclei", ["treated", "endometriosis", "age", "log_nuclei"]),
                       ("plus_study", ["treated", "endometriosis", "age", "log_nuclei", "study_tan"])):
         if name == "plus_study" and d.study_tan.nunique() < 2:
             continue
-        x = d.dropna(subset=["residual"] + cov)
+        x = d.loc[base] if name == "treatment_only" else d.dropna(subset=["residual"] + cov)
         f = sm.OLS(x.residual, sm.add_constant(x[cov])).fit(cov_type="HC3")
         ci = f.conf_int().loc["treated"]
         out[name] = dict(n=int(len(x)), treated_coef=round(float(f.params["treated"]), 3), ci=[round(float(ci[0]), 3), round(float(ci[1]), 3)],
-                         p=pv(f.pvalues["treated"]), endometriosis_coef=round(float(f.params["endometriosis"]), 3), endometriosis_p=pv(f.pvalues["endometriosis"]))
+                         p=pv(f.pvalues["treated"]))
+        if "endometriosis" in cov:
+            out[name].update(endometriosis_coef=round(float(f.params["endometriosis"]), 3), endometriosis_p=pv(f.pvalues["endometriosis"]))
     return out
 
 
@@ -140,6 +143,38 @@ def r4_factorial(tag, tg):
     out["p_natural_endometriosis_vs_none_index"] = mw(ne.dyssynchrony, nn.dyssynchrony, "two-sided")
     out["p_natural_endometriosis_vs_none_distance"] = mw(ne.residual, nn.residual, "two-sided")
     out["p_exposed_no_endometriosis_index_above_natural_no_endometriosis"] = mw(cell(tg, False).dyssynchrony, nn.dyssynchrony, "greater")
+    return out
+
+
+def min_nuclei_clocks(P, M, tg, min_n, train_min_n=MIN_N):
+    """Stroma and epithelium clocks as in s4: trained on staged natural donors with at least train_min_n nuclei
+    (leave-one-donor-out for them), other natural donors with at least train_min_n and exposed donors (tg) with at
+    least min_n nuclei scored by the full fit. Returns donor x [group, stroma, epithelium, dyssynchrony] for donors
+    with both compartments."""
+    rows = []
+    for comp in ("stroma", "epithelium"):
+        c = M[(M.compartment == comp) & (((M.group == "natural") & (M.n >= train_min_n)) | ((M.group == tg) & (M.n >= min_n)))]
+        tr = c.y.notna().to_numpy(); X, y = P.loc[c.index].to_numpy(), c.y.to_numpy()
+        pred = np.full(len(c), np.nan); pred[tr] = lodo_h(X[tr], y[tr], N_HVG); pred[~tr] = fit(X[tr], y[tr])(X[~tr])
+        rows.append(pd.DataFrame({"donor": c.donor.values, "group": c.group.values, "compartment": comp, "clock": pred}))
+    D = pd.concat(rows).pivot_table(index=["donor", "group"], columns="compartment", values="clock").reset_index().dropna()
+    D["dyssynchrony"] = D.stroma - D.epithelium
+    return D.set_index("donor")
+
+
+def r10_min_nuclei(tag, tg, thresholds=(10, 20, 30, 50)):
+    """H1 (stroma minus epithelium index, exposed above natural) and position-matched residual (exposed below natural)
+    with the minimum nuclei per compartment lowered for exposed donors only. Training and natural donors stay at MIN_N."""
+    P, M = load(tag); out = {"training_min_n": MIN_N}
+    for t in thresholds:
+        D = min_nuclei_clocks(P, M, tg, t)
+        nat, tr = D[D.group == "natural"], D[D.group == tg]
+        rn, rt = residuals(nat.stroma, nat.epithelium, (tr.stroma, tr.epithelium))
+        out[f"min{t}"] = dict(n_exposed=len(tr), n_natural=len(nat), exposed_donors=sorted(tr.index),
+                              index_median_exposed=round(float(tr.dyssynchrony.median()), 3), index_median_natural=round(float(nat.dyssynchrony.median()), 3),
+                              p_h1=mw(tr.dyssynchrony, nat.dyssynchrony, "greater"),
+                              residual_median_exposed=round(float(np.median(rt)), 3), residual_median_natural=round(float(np.median(rn)), 3),
+                              p_residual=mw(rt, rn, "less"))
     return out
 
 
@@ -217,7 +252,8 @@ if __name__ == "__main__":
     R = {}
     for tag, tg in SETS.items():
         R[tag] = dict(r1_all_compartments=r1_all_compartments(tag, tg), r2_staged_only=r2_staged(tag, tg), r3_ood=r3_ood(tag, tg),
-                      r4_joint=r4_joint(tag, tg), r4_factorial=r4_factorial(tag, tg), r5_cross_dataset=r5_cross(tag, tg), r6_ambient=r6_ambient(tag, tg))
+                      r4_joint=r4_joint(tag, tg), r4_factorial=r4_factorial(tag, tg), r5_cross_dataset=r5_cross(tag, tg), r6_ambient=r6_ambient(tag, tg),
+                      r10_min_nuclei=r10_min_nuclei(tag, tg))
     R["huang_r2_lodo_line"] = r2_huang_lodo()
     R["bulk_r7"] = r7_bulk()
     n2, c2 = json.load(open(os.path.join(OUT, "s2_nuclei_summary.json"))), json.load(open(os.path.join(OUT, "s2_cells_combined_pill_summary.json")))

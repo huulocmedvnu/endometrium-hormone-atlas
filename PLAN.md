@@ -229,3 +229,15 @@ read 0.59 and 0.41.
   without endometriosis. Reported: median stroma minus epithelium index and distance from the natural line per group,
   two-sided Mann-Whitney for natural donors with against without endometriosis, and one-sided Mann-Whitney for exposed
   donors without endometriosis against natural donors without endometriosis (index higher).
+
+## R10 and R4 extensions (added 2026-10-13, after all results, post hoc)
+
+- R10 extension, minimum nuclei for exposed donors: H1 (stroma minus epithelium index, exposed above natural,
+  one-sided Mann-Whitney as in s2) and the position-matched residual (exposed below natural, one-sided Mann-Whitney
+  as in s4) repeated with at least 10, 20, 30 and 50 nuclei per donor and compartment. The lower threshold applies to
+  exposed donors only. Training donors and natural donors stay at 50 nuclei, so the clocks and the natural line are
+  those of the main analysis. Reported per threshold: n exposed, n natural, median index and median residual per
+  group, P for each test. Stored as r10_min_nuclei within each set of outputs/s9_review.json.
+- R4 like-for-like reference: model treatment_only (residual ~ treated, HC3) on the same donors as
+  treatment_endometriosis, so the treated coefficient with and without the endometriosis term can be compared. A model
+  with BMI was planned if BMI were available. Neither HECA file has BMI, so it was not fitted.

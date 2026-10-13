@@ -51,6 +51,15 @@
    }
   },
   "r4_joint": {
+   "treatment_only": {
+    "n": 56,
+    "treated_coef": -0.253,
+    "ci": [
+     -0.505,
+     -0.0
+    ],
+    "p": 0.0498
+   },
    "treatment_endometriosis": {
     "n": 56,
     "treated_coef": -0.253,
@@ -145,6 +154,94 @@
    "p_natural_endometriosis_vs_none_index": 0.626,
    "p_natural_endometriosis_vs_none_distance": 0.516,
    "p_exposed_no_endometriosis_index_above_natural_no_endometriosis": 0.0125
+  },
+  "r10_min_nuclei": {
+   "training_min_n": 50,
+   "min10": {
+    "n_exposed": 11,
+    "n_natural": 48,
+    "exposed_donors": [
+     "FX0024",
+     "FX0065",
+     "FX1074",
+     "FX1080",
+     "FX1191",
+     "FX9007",
+     "FX9010",
+     "FX9012",
+     "FX9014",
+     "FX9018",
+     "FX9021"
+    ],
+    "index_median_exposed": 0.4,
+    "index_median_natural": -0.03,
+    "p_h1": 0.000191,
+    "residual_median_exposed": -0.271,
+    "residual_median_natural": -0.028,
+    "p_residual": 0.00116
+   },
+   "min20": {
+    "n_exposed": 9,
+    "n_natural": 48,
+    "exposed_donors": [
+     "FX0024",
+     "FX0065",
+     "FX1080",
+     "FX1191",
+     "FX9007",
+     "FX9012",
+     "FX9014",
+     "FX9018",
+     "FX9021"
+    ],
+    "index_median_exposed": 0.4,
+    "index_median_natural": -0.03,
+    "p_h1": 0.000783,
+    "residual_median_exposed": -0.271,
+    "residual_median_natural": -0.028,
+    "p_residual": 0.0023
+   },
+   "min30": {
+    "n_exposed": 9,
+    "n_natural": 48,
+    "exposed_donors": [
+     "FX0024",
+     "FX0065",
+     "FX1080",
+     "FX1191",
+     "FX9007",
+     "FX9012",
+     "FX9014",
+     "FX9018",
+     "FX9021"
+    ],
+    "index_median_exposed": 0.4,
+    "index_median_natural": -0.03,
+    "p_h1": 0.000783,
+    "residual_median_exposed": -0.271,
+    "residual_median_natural": -0.028,
+    "p_residual": 0.0023
+   },
+   "min50": {
+    "n_exposed": 8,
+    "n_natural": 48,
+    "exposed_donors": [
+     "FX0024",
+     "FX0065",
+     "FX1080",
+     "FX1191",
+     "FX9007",
+     "FX9012",
+     "FX9018",
+     "FX9021"
+    ],
+    "index_median_exposed": 0.337,
+    "index_median_natural": -0.03,
+    "p_h1": 0.00152,
+    "residual_median_exposed": -0.264,
+    "residual_median_natural": -0.028,
+    "p_residual": 0.00531
+   }
   }
  },
  "cells_combined_pill": {
@@ -199,6 +296,15 @@
    }
   },
   "r4_joint": {
+   "treatment_only": {
+    "n": 49,
+    "treated_coef": -0.237,
+    "ci": [
+     -0.442,
+     -0.032
+    ],
+    "p": 0.0237
+   },
    "treatment_endometriosis": {
     "n": 49,
     "treated_coef": -0.217,
@@ -304,6 +410,96 @@
    "p_natural_endometriosis_vs_none_index": 0.966,
    "p_natural_endometriosis_vs_none_distance": 0.898,
    "p_exposed_no_endometriosis_index_above_natural_no_endometriosis": 0.291
+  },
+  "r10_min_nuclei": {
+   "training_min_n": 50,
+   "min10": {
+    "n_exposed": 10,
+    "n_natural": 40,
+    "exposed_donors": [
+     "C01",
+     "C02",
+     "E02",
+     "E03",
+     "E04",
+     "E05",
+     "E06",
+     "E07",
+     "E08",
+     "E09"
+    ],
+    "index_median_exposed": 0.174,
+    "index_median_natural": 0.015,
+    "p_h1": 0.0254,
+    "residual_median_exposed": -0.191,
+    "residual_median_natural": -0.026,
+    "p_residual": 0.0227
+   },
+   "min20": {
+    "n_exposed": 10,
+    "n_natural": 40,
+    "exposed_donors": [
+     "C01",
+     "C02",
+     "E02",
+     "E03",
+     "E04",
+     "E05",
+     "E06",
+     "E07",
+     "E08",
+     "E09"
+    ],
+    "index_median_exposed": 0.174,
+    "index_median_natural": 0.015,
+    "p_h1": 0.0254,
+    "residual_median_exposed": -0.191,
+    "residual_median_natural": -0.026,
+    "p_residual": 0.0227
+   },
+   "min30": {
+    "n_exposed": 10,
+    "n_natural": 40,
+    "exposed_donors": [
+     "C01",
+     "C02",
+     "E02",
+     "E03",
+     "E04",
+     "E05",
+     "E06",
+     "E07",
+     "E08",
+     "E09"
+    ],
+    "index_median_exposed": 0.174,
+    "index_median_natural": 0.015,
+    "p_h1": 0.0254,
+    "residual_median_exposed": -0.191,
+    "residual_median_natural": -0.026,
+    "p_residual": 0.0227
+   },
+   "min50": {
+    "n_exposed": 9,
+    "n_natural": 40,
+    "exposed_donors": [
+     "C01",
+     "C02",
+     "E02",
+     "E03",
+     "E04",
+     "E05",
+     "E06",
+     "E07",
+     "E09"
+    ],
+    "index_median_exposed": 0.219,
+    "index_median_natural": 0.015,
+    "p_h1": 0.0177,
+    "residual_median_exposed": -0.235,
+    "residual_median_natural": -0.026,
+    "p_residual": 0.0155
+   }
   }
  },
  "huang_r2_lodo_line": {
